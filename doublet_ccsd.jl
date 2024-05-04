@@ -49,17 +49,18 @@ T2 = Tn(2)
 # could have skipped first term in exp(T2) = 1 + T2 + 1/2 T2^2 + 1/6 T2^3, because it
 # is zero in any case. We include it, because it is not expensive in this case.
 #
-@time Ω_μ2_4 = project_equation_on_bra(μ_2_4, H, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_2 = project_equation_on_bra(μ_2_2, H, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify
 
 # Identify L and u tensors to simplify expression and put trig into scalar
 # (this can be expensive and mostly important for code generation)
-@time Ω_μ2_4 = look_for_tensor_replacements_smart(Ω_μ2_4, make_exchange_transformer("t", "u")) |> SpinAdaptedSecondQuantization.simplify
-@time Ω_μ2_4 = look_for_tensor_replacements_smart(Ω_μ2_4, make_exchange_transformer("g", "L")) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_2 = look_for_tensor_replacements_smart(Ω_μ2_2, make_exchange_transformer("t", "u")) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_2 = look_for_tensor_replacements_smart(Ω_μ2_2, make_exchange_transformer("g", "L")) |> SpinAdaptedSecondQuantization.simplify
 
-@time Ω_μ2_4 = put_trig_and_fixed_tensor_in_scalar(Ω_μ2_4) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_2 = put_trig_and_fixed_tensor_in_scalar(Ω_μ2_2) |> SpinAdaptedSecondQuantization.simplify
 
 # Prepare for code generation
-@time Ω_μ2_4_s, Ω_μ2_4_ss, Ω_μ2_4_ns = desymmetrize(Ω_μ2_4, make_permutation_mappings([(3,4),(5, 6)]))
+@time Ω_μ2_2_s, Ω_μ2_2_ss, Ω_μ2_2_ns = desymmetrize(Ω_μ2_2, make_permutation_mappings([(3,4),(5, 6)]))
 
-@time Ω_μ2_4_s = rename_tensors(Ω_μ2_4_s)
-@show (Ω_μ2_4_s, trans)
+@time Ω_μ2_2_s = change_summation_indices(Ω_μ2_2_s)
+@time Ω_μ2_2_s = rename_tensors(Ω_μ2_2_s)
+@show (Ω_μ2_2_s, trans)

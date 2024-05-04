@@ -51,7 +51,7 @@ function get_sim_H(n, bch_order)
 	end
 end
 
-χ(n) = prod(SpinAdaptedSecondQuantization.E(2i-1,2i) for i = 2:n+1) * occupied(4:2:2(n+1)...) * virtual(3:2:2(n+1)...)
+χ(n) = prod(SpinAdaptedSecondQuantization.E(2i,2i-1) for i = 2:n+1) * occupied(3:2:2(n+1)...) * virtual(4:2:2(n+1)...)
 Tn(n) = 1 // factorial(n) * ∑(psym_tensor("t", 3:2(n+1)...) * χ(n), 3:2(n+1))
 χd(n) = prod((fermiondag(2i-1,α)*fermion(2i,α) + fermiondag(2i-1,β)*fermion(2i,β)) for i = 2:n+1) * occupied(3:2:2(n+1)...) * virtual(4:2:2(n+1)...)
 
