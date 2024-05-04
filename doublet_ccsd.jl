@@ -11,7 +11,7 @@ H = get_H()
 P = get_sim_P(1, 4) |> SpinAdaptedSecondQuantization.simplify
 
 T2 = Tn(2)
-
+@show T2
 # Define projection manifolds <χ| = <μ| exp(-T2) P
 # NOTE: we use annihilation and creation operators and not the singlet E operators.
 # This is because we want to count the excitation order
@@ -49,18 +49,18 @@ T2 = Tn(2)
 # could have skipped first term in exp(T2) = 1 + T2 + 1/2 T2^2 + 1/6 T2^3, because it
 # is zero in any case. We include it, because it is not expensive in this case.
 #
-@time Ω_μ2_2 = project_equation_on_bra(μ_2_2, H, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_3 = project_equation_on_bra(μ_2_3, H, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify
 
 # Identify L and u tensors to simplify expression and put trig into scalar
 # (this can be expensive and mostly important for code generation)
-@time Ω_μ2_2 = look_for_tensor_replacements_smart(Ω_μ2_2, make_exchange_transformer("t", "u")) |> SpinAdaptedSecondQuantization.simplify
-@time Ω_μ2_2 = look_for_tensor_replacements_smart(Ω_μ2_2, make_exchange_transformer("g", "L")) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_3 = look_for_tensor_replacements_smart(Ω_μ2_3, make_exchange_transformer("t", "u")) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_3 = look_for_tensor_replacements_smart(Ω_μ2_3, make_exchange_transformer("g", "L")) |> SpinAdaptedSecondQuantization.simplify
 
-@time Ω_μ2_2 = put_trig_and_fixed_tensor_in_scalar(Ω_μ2_2) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_3 = put_trig_and_fixed_tensor_in_scalar(Ω_μ2_3) |> SpinAdaptedSecondQuantization.simplify
 
 # Prepare for code generation
-@time Ω_μ2_2_s, Ω_μ2_2_ss, Ω_μ2_2_ns = desymmetrize(Ω_μ2_2, make_permutation_mappings([(3,4),(5, 6)]))
+@time Ω_μ2_3_s, Ω_μ2_3_ss, Ω_μ2_3_ns = desymmetrize(Ω_μ2_3, make_permutation_mappings([(3,4),(5, 6)]))
 
-@time Ω_μ2_2_s = change_summation_indices(Ω_μ2_2_s)
-@time Ω_μ2_2_s = rename_tensors(Ω_μ2_2_s)
-@show (Ω_μ2_2_s, trans)
+@time Ω_μ2_3_s = change_summation_indices(Ω_μ2_3_s)
+@time Ω_μ2_3_s = rename_tensors(Ω_μ2_3_s)
+@show (Ω_μ2_3_s, trans)
