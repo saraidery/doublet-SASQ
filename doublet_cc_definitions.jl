@@ -1,27 +1,51 @@
 using SpinAdaptedSecondQuantization
 
 
-function get_P()
+function get_P_spin(spin, p, q)
 
 	st = real_tensor("sin(θ)")
 	ct = real_tensor("cos(θ)")
 
-	P_α = st*st*fermiondag(1, α)*fermion(1, α)*occupied(1) + ct*ct*fermiondag(2, α)*fermion(2, α)*virtual(2) - st*ct*(fermiondag(1, α)*fermion(2, α) + fermiondag(2, α)*fermion(1, α))*virtual(2)*occupied(1)
-	P_β = st*st*fermiondag(1, β)*fermion(1, β)*occupied(1) + ct*ct*fermiondag(2, β)*fermion(2, β)*virtual(2) - st*ct*(fermiondag(1, β)*fermion(2, β) + fermiondag(2, β)*fermion(1, β))*virtual(2)*occupied(1)
+	P_spin = st*st*fermiondag(p, spin)*fermion(p, spin)*occupied(p) + ct*ct*fermiondag(q, spin)*fermion(q, spin)*virtual(q) - st*ct*(fermiondag(p, spin)*fermion(q, spin) + fermiondag(q, spin)*fermion(p, spin))*virtual(q)*occupied(p)
 
-	# Doublet projector
+	return P_spin
+
+end
+
+function get_doublet_P()
+
+	P_α = get_P_spin(α, 1, 2)
+	P_β = get_P_spin(β, 1, 2)
+
 	P = P_β - P_β*P_α
 
 	return P
 
 end
 
-function get_sim_P(n, bch_order)
 
-	P = get_P()
+function get_triplet_P()
+
+	P_α_1 = get_P_spin(α, 1, 2)
+	P_β_1 = get_P_spin(β, 1, 2)
+
+	P_1 = P_β_1 - P_β_1*P_α_1
+
+	P_α_2 = get_P_spin(α, 3, 4)
+	P_β_2 = get_P_spin(β, 3, 4)
+
+	P_2 = P_β_2 - P_β_2*P_α_2
+
+	P = P_1*P_2
+
+	return P
+
+end
+
+function get_bch_operator(n, op, bch_order)
+
 	T = sum(Tn(i) for i = 1:n)
-	@show T
-	return bch(P, T, bch_order)
+	return bch(op, T, bch_order)
 
 end
 
@@ -74,7 +98,7 @@ end
 act_on_bra(x, max_ops=Inf) = act_on_ket(x', max_ops)'
 
 
-function get_projection_manifold(order_bra, P, T2, n_t2=1)
+function get_projection_manifold(order_bra, P, T2, n_t2)
 	# n_t2 is the order we need in exp(-T2) for the original projection manifold
 	# For CCSD, this means n_t2 <= 1, for CCSDTQ, n_t2 <= 2, etc.
 
@@ -84,8 +108,9 @@ function get_projection_manifold(order_bra, P, T2, n_t2=1)
 	end
 
 	eq = bra_op
-	eq = exp_T_on_bra(eq, -T2, n_t2)
-	eq = act_on_bra(eq * P) |> simplify_heavy
+	eq = exp_T_on_bra(eq, -T2, 1) # Hard coded for CCSD for now
+	eq = act_on_bra(eq * P) |> SpinAdaptedSecondQuantization.simplify
+	eq = exp_T_on_bra(eq, T2, n_t2) |> simplify_heavy
 
 	return eq
 
@@ -93,7 +118,9 @@ end
 
 function get_ex_of_order(ex, exci_order)
 
-	return SpinAdaptedSecondQuantization.Expression(ex.terms[[length(t.operators) == 2*exci_order for t in ex.terms]])
+	ex = SpinAdaptedSecondQuantization.Expression(ex.terms[[length(t.operators) == 2*exci_order for t in ex.terms]])
+	ex = simplify_heavy(ex)
+	return ex
 
 end
 
@@ -105,7 +132,8 @@ function project_equation_on_bra(bra, op, ket_order, T2, n_T2)
 		ket_op = χ(ket_order)
 	end
 
-	ex = act_on_bra(bra * op) |> SpinAdaptedSecondQuantization.simplify
+	ex = exp_T_on_bra(bra, -T2, n_T2-1) |> SpinAdaptedSecondQuantization.simplify
+	ex = act_on_bra(ex * op) |> SpinAdaptedSecondQuantization.simplify
 	ex = exp_T_on_bra(ex, T2, n_T2) |> SpinAdaptedSecondQuantization.simplify
 	ex = act_on_bra(ex * ket_op, 0) |> SpinAdaptedSecondQuantization.simplify
 
