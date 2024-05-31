@@ -27,11 +27,83 @@ T2 = Tn(2)
 μ_2_5 = get_ex_of_order(μ_2, 5)
 μ_2_6 = get_ex_of_order(μ_2, 6)
 
-@time Ω_μ1 = project_triplet_equation_on_bra(μ_1, H, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify
-@time Ω_μ2_0 = project_triplet_equation_on_bra(μ_2_0, H, 0, T2, 1) |> SpinAdaptedSecondQuantization.simplify # 32s
-@time Ω_μ2_1 = project_triplet_equation_on_bra(μ_2_1, H, 0, T2, 1) |> SpinAdaptedSecondQuantization.simplify # 10392
-@time Ω_μ2_2 = project_triplet_equation_on_bra(μ_2_2, H, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify # 17261
-@time Ω_μ2_3 = project_triplet_equation_on_bra(μ_2_3, H, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify #
-@time Ω_μ2_4 = project_triplet_equation_on_bra(μ_2_4, H, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify #
-@time Ω_μ2_5 = project_triplet_equation_on_bra(μ_2_5, H, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify #
-@time Ω_μ2_6 = project_triplet_equation_on_bra(μ_2_6, H, 0, T2, 4) |> SpinAdaptedSecondQuantization.simplify #
+@time S_μ1 = project_triplet_equation_on_bra(μ_1, 1, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify
+open("S_1.txt", "w") do io
+    println(io, (S_μ1, trans))
+end
+
+@time S_2_0 = project_triplet_equation_on_bra(μ_2_0, 1, 0, T2, 1) |> SpinAdaptedSecondQuantization.simplify
+open("S_2_0.txt", "w") do io
+    println(io, (S_2_0, trans))
+end
+
+@time S_2_1 = project_triplet_equation_on_bra(μ_2_1, 1, 0, T2, 1) |> SpinAdaptedSecondQuantization.simplify
+open("S_2_1.txt", "w") do io
+    println(io, (S_2_1, trans))
+end
+
+@time S_2_2 = project_triplet_equation_on_bra(μ_2_2, 1, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify
+open("S_2_2.txt", "w") do io
+    println(io, (S_2_2, trans))
+end
+
+@time S_2_3 = project_triplet_equation_on_bra(μ_2_3, 1, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify
+open("S_2_3.txt", "w") do io
+    println(io, (S_2_3, trans))
+end
+
+@time S_2_4 = project_triplet_equation_on_bra(μ_2_4, 1, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify
+open("S_2_4.txt", "w") do io
+    println(io, (S_2_4, trans))
+end
+
+@time S_2_5 = project_triplet_equation_on_bra(μ_2_5, 1, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify
+open("S_2_5.txt", "w") do io
+    println(io, (S_2_5, trans))
+end
+
+@time S_2_6= project_triplet_equation_on_bra(μ_2_6, 1, 0, T2, 4) |> SpinAdaptedSecondQuantization.simplify
+open("S_μ2_6.txt", "w") do io
+    println(io, (S_μ2_6, trans))
+end
+
+
+@time O_μ1 = project_triplet_equation_on_bra(μ_1, H, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify
+open("O_1.txt", "w") do io
+    println(io, (O_μ1, trans))
+end
+
+@time O_2_0 = project_triplet_equation_on_bra(μ_2_0, H, 0, T2, 1) |> SpinAdaptedSecondQuantization.simplify
+open("O_2_0.txt", "w") do io
+    println(io, (O_2_0, trans))
+end
+
+@time O_2_1 = project_triplet_equation_on_bra(μ_2_1, H, 0, T2, 1) |> SpinAdaptedSecondQuantization.simplify
+open("O_2_1.txt", "w") do io
+    println(io, (O_2_1, trans))
+end
+
+@time O_2_2 = project_triplet_equation_on_bra(μ_2_2, H, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify
+open("O_2_2.txt", "w") do io
+    println(io, (O_2_2, trans))
+end
+
+@time O_2_3 = project_triplet_equation_on_bra(μ_2_3, H, 0, T2, 2) |> SpinAdaptedSecondQuantization.simplify
+open("O_2_3.txt", "w") do io
+    println(io, (O_2_3, trans))
+end
+
+@time O_2_4 = project_triplet_equation_on_bra(μ_2_4, H, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify
+open("O_2_4.txt", "w") do io
+    println(io, (O_2_4, trans))
+end
+
+@time O_2_5 = project_triplet_equation_on_bra(μ_2_5, H, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify
+open("O_2_5.txt", "w") do io
+    println(io, (O_2_5, trans))
+end
+
+@time O_2_6= project_triplet_equation_on_bra(μ_2_6, H, 0, T2, 4) |> SpinAdaptedSecondQuantization.simplify
+open("O_μ2_6.txt", "w") do io
+    println(io, (O_μ2_6, trans))
+end

@@ -9,7 +9,6 @@ t2 = symbols("t_AIAI", real=true)
 
 function replace_trig_tensors_with_scalar(tensors)
 
-
 	n_ct = count([t.symbol == "cos(θ)" for t in tensors])
 	n_st = count([t.symbol == "sin(θ)" for t in tensors])
 
@@ -33,11 +32,67 @@ function replace_fixed_tensors_with_scalar(tensors)
 	return other_tensors, new_scalar
 
 end
+
 function put_trig_in_scalar(ex)
 
 	new_terms = SpinAdaptedSecondQuantization.Term[]
 	 for t = ex.terms
 		tensors, new_scalar = replace_trig_tensors_with_scalar(t.tensors)
+
+		new_term = SpinAdaptedSecondQuantization.Term(
+		t.scalar * new_scalar,
+		t.sum_indices,
+		t.deltas,
+		tensors,
+		t.operators,
+		t.constraints
+		)
+
+		push!(new_terms, new_term)
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
+function put_fixed_tensor_in_scalar(ex)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	 for t = ex.terms
+
+		if !(1 in t.sum_indices) && ! (2 in t.sum_indices)
+
+			tensors, new_scalar = replace_fixed_tensors_with_scalar(t.tensors)
+
+		end
+
+		new_term = SpinAdaptedSecondQuantization.Term(
+		t.scalar * new_scalar,
+		t.sum_indices,
+		t.deltas,
+		tensors,
+		t.operators,
+		t.constraints
+		)
+
+		push!(new_terms, new_term)
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
+
+function put_fixed_tensor_in_scalar_remove_trig(ex)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	 for t = ex.terms
+		tensors, new_scalar = replace_trig_tensors_with_scalar(t.tensors)
+		new_scalar = 1.0
+
+		if !(1 in t.sum_indices) && ! (2 in t.sum_indices)
+
+			tensors, new_scalar_ = replace_fixed_tensors_with_scalar(tensors)
+			new_scalar = new_scalar * new_scalar_
+		end
 
 		new_term = SpinAdaptedSecondQuantization.Term(
 		t.scalar * new_scalar,
