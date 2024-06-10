@@ -139,3 +139,16 @@ function project_equation_on_bra(bra, op, ket_order, T2, n_T2)
 
 	return ex
 end
+
+function project_op_on_bra(bra, op, ket_order)
+
+	ket_op = 1
+	if ket_order > 0
+		ket_op = χ(ket_order)
+	end
+
+	ex = act_on_bra(ex * op) |> SpinAdaptedSecondQuantization.simplify
+	ex = act_on_bra(ex * ket_op, 0) |> SpinAdaptedSecondQuantization.simplify_heavy
+
+	return ex
+end

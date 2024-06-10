@@ -20,6 +20,23 @@ function replace_trig_tensors_with_scalar(tensors)
 
 end
 
+function compress_trig_tensors(tensors)
+
+	n_ct = count([t.symbol == "cos(θ)" for t in tensors])
+	n_st = count([t.symbol == "sin(θ)" for t in tensors])
+
+	other_tensors = tensors[[(t.symbol != "sin(θ)" && t.symbol != "cos(θ)") for t in tensors]]
+	name = "ct^" * string(n_ct) * "*st^" * string(n_st)
+	print(name)
+	tens = SpinAdaptedSecondQuantization.RealTensor(name,[])
+	println(typeof(tens))
+
+	push!(other_tensors, tens)
+
+	return other_tensors
+
+end
+
 function replace_fixed_tensors_with_scalar(tensors)
 
 	n_t1 = count([t.indices == [2, 1] for t in tensors])
@@ -108,6 +125,29 @@ function put_fixed_tensor_in_scalar_remove_trig(ex)
 
 	return SpinAdaptedSecondQuantization.Expression(new_terms)
 end
+
+
+function compress_trig(ex)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	 for t = ex.terms
+		tensors = compress_trig_tensors(t.tensors)
+
+		new_term = SpinAdaptedSecondQuantization.Term(
+		t.scalar,
+		t.sum_indices,
+		t.deltas,
+		tensors,
+		t.operators,
+		t.constraints
+		)
+
+		push!(new_terms, new_term)
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
 
 function put_trig_and_fixed_tensor_in_scalar(ex)
 
