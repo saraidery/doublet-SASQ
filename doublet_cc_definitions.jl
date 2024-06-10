@@ -78,6 +78,7 @@ end
 
 χ(n) = prod(SpinAdaptedSecondQuantization.E(i-1,i) for i = 2:2:2*n) * occupied(2:2:2*n...) * virtual(1:2:2*n...)
 Tn(n) = 1 // factorial(n) * ∑(psym_tensor("t", 1:2*n...) * χ(n), 1:2*n)
+Rn(n) = 1 // factorial(n) * ∑(psym_tensor("r", 1:2*n...) * χ(n), 1:2*n)
 χd(n) = prod((fermiondag(2i-1,α)*fermion(2i,α) + fermiondag(2i-1,β)*fermion(2i,β)) for i = 2:n+1) * occupied(3:2:2(n+1)...) * virtual(4:2:2(n+1)...)
 
 
@@ -132,7 +133,7 @@ function project_equation_on_bra(bra, op, ket_order, T2, n_T2)
 		ket_op = χ(ket_order)
 	end
 
-	ex = exp_T_on_bra(bra, -T2, n_T2-1) |> SpinAdaptedSecondQuantization.simplify
+	ex = exp_T_on_bra(bra, -T2, n_T2) |> SpinAdaptedSecondQuantization.simplify
 	ex = act_on_bra(ex * op) |> SpinAdaptedSecondQuantization.simplify
 	ex = exp_T_on_bra(ex, T2, n_T2) |> SpinAdaptedSecondQuantization.simplify
 	ex = act_on_bra(ex * ket_op, 0) |> SpinAdaptedSecondQuantization.simplify

@@ -47,12 +47,12 @@ T2 = Tn(2)
 # could have skipped first term in exp(T2) = 1 + T2 + 1/2 T2^2 + 1/6 T2^3, because it
 # is zero in any case. We include it, because it is not expensive in this case.
 #
-@time Ω_μ2_4 = project_equation_on_bra(μ_2_4, H, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_4 = project_equation_on_bra(μ_2_4, H, 0, T2, 3) |> SpinAdaptedSecondQuantization.simplify_heavy
 
 # Identify L and u tensors to simplify expression and put trig into scalar
 # (this can be expensive and mostly important for code generation)
 @time Ω_μ2_4 = look_for_tensor_replacements_smart(Ω_μ2_4, make_exchange_transformer("t", "u")) |> SpinAdaptedSecondQuantization.simplify
-@time Ω_μ2_4 = look_for_tensor_replacements_smart(Ω_μ2_4, make_exchange_transformer("g", "L")) |> SpinAdaptedSecondQuantization.simplify
+@time Ω_μ2_4 = look_for_tensor_replacements_smart(Ω_μ2_4, make_exchange_transformer("g", "L")) |> SpinAdaptedSecondQuantization.simplify_heavy
 
 @time Ω_μ2_4 = put_fixed_tensor_in_scalar_remove_trig(Ω_μ2_4) |> SpinAdaptedSecondQuantization.simplify
 
