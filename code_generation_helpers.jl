@@ -5,12 +5,13 @@ function generate_eT_code(file_name, routine_name, eq, eq_name, symmetry, transl
         println(io, "open(\""*file_name*".F90\", \"w\") do io")
         println(io, "s = "*print_eT_function_generator(routine_name, eq, eq_name, symmetry, translation, wf,
             Dict([
-                "u_vovo" => "wf%u_aibj",
+                "u_vovo" => "u_aibj",
+                "t_vovo" => "t_aibj",
                 "F_oo" => "wf%fock_ij",
                 "F_vv" => "wf%fock_ab",
                 "F_ov" => "wf%fock_ia",
                 "F_vo" => "wf%fock_ai",
-            ]), ["F_oo", "F_vv", "F_ov", "F_vo", "u_vovo"]))
+            ]), ["F_oo", "F_vv", "F_ov", "F_vo"]))
         println(io, "println(io, s)")
         println(io, "end")
     end

@@ -26,27 +26,23 @@ function compress_trig_tensors(tensors)
 	n_st = count([t.symbol == "sin(θ)" for t in tensors])
 
 	other_tensors = tensors[[(t.symbol != "sin(θ)" && t.symbol != "cos(θ)") for t in tensors]]
-	name = "ct^" * string(n_ct) * "*st^" * string(n_st)
-	print(name)
+	name = ""
+
+	if (n_ct  > 0)
+		name = "ct" * string(n_ct)
+	end
+	if (n_st  > 0 && n_ct > 0)
+		name = name * "_"
+	end
+	if (n_st  > 0)
+		 name = name * "st" * string(n_st)
+	end
+
 	tens = SpinAdaptedSecondQuantization.RealTensor(name,[])
-	println(typeof(tens))
 
 	push!(other_tensors, tens)
 
 	return other_tensors
-
-end
-
-function replace_fixed_tensors_with_scalar(tensors)
-
-	n_t1 = count([t.indices == [2, 1] for t in tensors])
-	n_t2 = count([t.indices == [2, 1, 2, 1] for t in tensors])
-
-	other_tensors = tensors[[!(t.indices == [2, 1]) && !(t.indices == [2, 1, 2, 1]) for t in tensors]]
-
-	new_scalar = t1^n_t1 * t2^n_t2
-
-	return other_tensors, new_scalar
 
 end
 
@@ -71,60 +67,7 @@ function put_trig_in_scalar(ex)
 	return SpinAdaptedSecondQuantization.Expression(new_terms)
 end
 
-function put_fixed_tensor_in_scalar(ex)
 
-	new_terms = SpinAdaptedSecondQuantization.Term[]
-	 for t = ex.terms
-
-		if !(1 in t.sum_indices) && ! (2 in t.sum_indices)
-
-			tensors, new_scalar = replace_fixed_tensors_with_scalar(t.tensors)
-
-		end
-
-		new_term = SpinAdaptedSecondQuantization.Term(
-		t.scalar * new_scalar,
-		t.sum_indices,
-		t.deltas,
-		tensors,
-		t.operators,
-		t.constraints
-		)
-
-		push!(new_terms, new_term)
-	end
-
-	return SpinAdaptedSecondQuantization.Expression(new_terms)
-end
-
-
-function put_fixed_tensor_in_scalar_remove_trig(ex)
-
-	new_terms = SpinAdaptedSecondQuantization.Term[]
-	 for t = ex.terms
-		tensors, new_scalar = replace_trig_tensors_with_scalar(t.tensors)
-		new_scalar = 1.0
-
-		if !(1 in t.sum_indices) && ! (2 in t.sum_indices)
-
-			tensors, new_scalar_ = replace_fixed_tensors_with_scalar(tensors)
-			new_scalar = new_scalar * new_scalar_
-		end
-
-		new_term = SpinAdaptedSecondQuantization.Term(
-		t.scalar * new_scalar,
-		t.sum_indices,
-		t.deltas,
-		tensors,
-		t.operators,
-		t.constraints
-		)
-
-		push!(new_terms, new_term)
-	end
-
-	return SpinAdaptedSecondQuantization.Expression(new_terms)
-end
 
 
 function compress_trig(ex)
@@ -149,32 +92,6 @@ function compress_trig(ex)
 end
 
 
-function put_trig_and_fixed_tensor_in_scalar(ex)
-
-	new_terms = SpinAdaptedSecondQuantization.Term[]
-	 for t = ex.terms
-		tensors, new_scalar = replace_trig_tensors_with_scalar(t.tensors)
-
-		if !(1 in t.sum_indices) && ! (2 in t.sum_indices)
-
-			tensors, new_scalar_ = replace_fixed_tensors_with_scalar(tensors)
-			new_scalar = new_scalar * new_scalar_
-		end
-
-		new_term = SpinAdaptedSecondQuantization.Term(
-		t.scalar * new_scalar,
-		t.sum_indices,
-		t.deltas,
-		tensors,
-		t.operators,
-		t.constraints
-		)
-
-		push!(new_terms, new_term)
-	end
-
-	return SpinAdaptedSecondQuantization.Expression(new_terms)
-end
 
 function swap_index_tensor(index, new_index, tensor)
 	if !(index in tensor.indices)
@@ -202,7 +119,7 @@ function change_summation_indices(eq)
 		new_terms = SpinAdaptedSecondQuantization.Term[]
 		for t in terms
 			if (index in t.sum_indices)
-				new_index = maximum([maximum(t.sum_indices) + 1, 3])
+				new_index = maximum([maximum(t.sum_indices) + 1, 5])
 				new_tensors = SpinAdaptedSecondQuantization.Tensor[]
 				for tensor in t.tensors
 					new_tensor = swap_index_tensor(index, new_index, tensor)
@@ -278,4 +195,65 @@ function rename_tensors(eq)
 		push!(new_terms, new_term)
 	end
 	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
+function split_with_deltas(ex)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	old_terms = SpinAdaptedSecondQuantization.Term[]
+
+	 for t in ex.terms
+		deltas = t.deltas
+
+		if length(deltas) > 0
+			push!(new_terms, t)
+		else
+			push!(old_terms, t)
+		end
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(old_terms), SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
+function strip_deltas(ex)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+
+	for t in ex.terms
+		deltas =  SpinAdaptedSecondQuantization.KroneckerDelta[]
+
+		new_term = SpinAdaptedSecondQuantization.Term(
+			t.scalar,
+			t.sum_indices,
+			deltas,
+			t.tensors,
+			t.operators,
+			t.constraints
+		)
+		push!(new_terms, new_term)
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+
+end
+
+
+function split_with_delta_index(ex, index)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	old_terms = SpinAdaptedSecondQuantization.Term[]
+
+	 for t in ex.terms
+		deltas = t.deltas
+
+		n = count([(index in d.indices) for d in deltas])
+
+		if n > 0
+			push!(new_terms, t)
+		else
+			push!(old_terms, t)
+		end
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(old_terms), SpinAdaptedSecondQuantization.Expression(new_terms)
 end

@@ -1,0 +1,32 @@
+include("../TensorOperation-eT-code/src/omeinsum_impl.jl")
+open("H_diag_1_bj.F90", "w") do io
+s = let
+    func = FortranFunction(("h", String[]))
+    FAA = ("FAA", true)
+    ct2_st2 = ("ct2_st2", true)
+    FII = ("FII", true)
+    ct1_st3 = ("ct1_st3", true)
+    tAI = ("tAI", true)
+    tAIAI = ("tAIAI", true)
+    ct3_st1 = ("ct3_st1", true)
+    F_oo = ("wf%fock_ij", false)
+    update_code!(func, ein",->", -1//1, [FAA, ct2_st2])
+    update_code!(func, ein",->", 1//1, [FII, ct2_st2])
+    update_code!(func, ein",,->", -1//1, [FAA, ct1_st3, tAI])
+    update_code!(func, ein",,->", -3//1, [FAA, ct2_st2, tAIAI])
+    update_code!(func, ein",,->", 1//1, [FAA, ct3_st1, tAI])
+    update_code!(func, ein",,->", 1//1, [FII, ct1_st3, tAI])
+    update_code!(func, ein",,->", 3//1, [FII, ct2_st2, tAIAI])
+    update_code!(func, ein",,->", -1//1, [FII, ct3_st1, tAI])
+    update_code!(func, ein",,,->", 1//1, [FAA, ct2_st2, tAI, tAI])
+    update_code!(func, ein",,,->", -1//1, [FII, ct2_st2, tAI, tAI])
+    update_code!(func, ein"kk,->", -2//1, [F_oo, ct2_st2])
+    update_code!(func, ein"kk,,->", -2//1, [F_oo, ct1_st3, tAI])
+    update_code!(func, ein"kk,,->", -2//1, [F_oo, ct2_st2, tAIAI])
+    update_code!(func, ein"kk,,->", 2//1, [F_oo, ct3_st1, tAI])
+    update_code!(func, ein"kk,,,->", 2//1, [F_oo, ct2_st2, tAI, tAI])
+    finalize_eT_function(func, "H_diag_1_bj", "doublet_ccsd")
+end
+
+println(io, s)
+end

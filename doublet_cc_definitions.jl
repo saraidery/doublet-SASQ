@@ -65,6 +65,14 @@ function get_H()
 
 end
 
+function get_diagonal_F()
+
+	F = ∑(real_tensor("F", 1, 1) * SpinAdaptedSecondQuantization.E(1, 1), 1)
+
+	return F
+
+end
+
 function get_sim_H(n, bch_order)
 
 	H = get_H()
@@ -148,8 +156,7 @@ function project_op_on_bra(bra, op, ket_order)
 		ket_op = χ(ket_order)
 	end
 
-	ex = act_on_bra(ex * op) |> SpinAdaptedSecondQuantization.simplify
-	ex = act_on_bra(ex * ket_op, 0) |> SpinAdaptedSecondQuantization.simplify_heavy
+	ex = act_on_bra(bra * op * ket_op, 0) |> SpinAdaptedSecondQuantization.simplify_heavy
 
 	return ex
 end
