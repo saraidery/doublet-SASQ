@@ -7,6 +7,8 @@ ct = cos(θ)
 t1= symbols("t_AI", real=true)
 t2 = symbols("t_AIAI", real=true)
 
+x2 = symbols("x_AIAI", real=true)
+
 function replace_trig_tensors_with_scalar(tensors)
 
 	n_ct = count([t.symbol == "cos(θ)" for t in tensors])
@@ -15,6 +17,20 @@ function replace_trig_tensors_with_scalar(tensors)
 	other_tensors = tensors[[(t.symbol != "sin(θ)" && t.symbol != "cos(θ)") for t in tensors]]
 
 	new_scalar = ct^n_ct * st^n_st
+
+	return other_tensors, new_scalar
+
+end
+
+function replace_fixed_tensors_with_scalar(tensors)
+
+	n_t1 = count([t.symbol == "t_AI" for t in tensors])
+	n_t2 = count([t.symbol == "t_AIAI" for t in tensors])
+	n_x2 = count([t.symbol == "x_AIAI" for t in tensors])
+
+	other_tensors = tensors[[(t.symbol != "t_AI" && t.symbol != "t_AIAI" && t.symbol != "x_AIAI") for t in tensors]]
+
+	new_scalar = t1^n_t1 * t2^n_t2 * x2^n_x2
 
 	return other_tensors, new_scalar
 
@@ -51,6 +67,29 @@ function put_trig_in_scalar(ex)
 	new_terms = SpinAdaptedSecondQuantization.Term[]
 	 for t = ex.terms
 		tensors, new_scalar = replace_trig_tensors_with_scalar(t.tensors)
+
+		new_term = SpinAdaptedSecondQuantization.Term(
+		t.scalar * new_scalar,
+		t.sum_indices,
+		t.deltas,
+		tensors,
+		t.operators,
+		t.constraints
+		)
+
+		push!(new_terms, new_term)
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
+function put_fixed_tensor_in_scalar(ex)
+
+	ex = rename_fixed_tensors(ex)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	 for t = ex.terms
+		tensors, new_scalar = replace_fixed_tensors_with_scalar(t.tensors)
 
 		new_term = SpinAdaptedSecondQuantization.Term(
 		t.scalar * new_scalar,
@@ -168,12 +207,61 @@ function get_reduced_tensor(tensor)
 		elseif (index == 2)
 			name = name * "A"
 		else
-			name = name * "x"
+			name = name * "_"
 		end
 	end
 	new_tensor = SpinAdaptedSecondQuantization.RealTensor(name, indices)
 	return new_tensor
 end
+
+function get_fixed_tensor(tensor)
+
+	name = tensor.symbol
+	if !(name == "t" || name == "x")
+		return tensor
+	end
+
+	indices = tensor.indices[[s != 1 && s != 2 for s in tensor.indices]]
+
+	if length(indices) != 0
+		return tensor
+	end
+
+	name = name * "_"
+	for index in tensor.indices
+		if (index == 1)
+			name = name * "I"
+		elseif (index == 2)
+			name = name * "A"
+		end
+	end
+	new_tensor = SpinAdaptedSecondQuantization.RealTensor(name, indices)
+	return new_tensor
+
+end
+
+function rename_fixed_tensors(eq)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	for term in eq.terms
+		new_tensors = SpinAdaptedSecondQuantization.Tensor[]
+		for tensor in term.tensors
+			new_tensor = get_fixed_tensor(tensor)
+			push!(new_tensors, new_tensor)
+		end
+		new_term = SpinAdaptedSecondQuantization.Term(
+			term.scalar,
+			term.sum_indices,
+			term.deltas,
+			new_tensors,
+			term.operators,
+			term.constraints
+		)
+		push!(new_terms, new_term)
+	end
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
 
 function rename_tensors(eq)
 
