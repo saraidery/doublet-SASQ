@@ -31,10 +31,12 @@ include("spin_excitation_operator.jl")
 #      occupied(1)*occupied(3)*occupied(5)*
 #      virtual(2)*virtual(4)*virtual(6))
 
+# println(eq)
+
 
 # @time eq = exp_T_on_bra(eq, -T1, 3) |> SpinAdaptedSecondQuantization.simplify
-# @time eq = exp_T_on_bra(eq, -T2, 1) |> SpinAdaptedSecondQuantization.simplify
-# @time eq = exp_T_on_bra(eq, -S, 1) |> SpinAdaptedSecondQuantization.simplify
+# @time eq = exp_T_on_bra(eq, -T2, 2) |> SpinAdaptedSecondQuantization.simplify
+# @time eq = exp_T_on_bra(eq, -S, 2) |> SpinAdaptedSecondQuantization.simplify
 
 
 # @time eq = act_on_bra(eq * P) |> SpinAdaptedSecondQuantization.simplify
@@ -54,16 +56,15 @@ include("spin_excitation_operator.jl")
 
 eq = deserialize("additional_t_t_store")
 
-
-@time eta = get_ex_of_order(eq, 4)
+@time eta = get_ex_of_order(eq, 2)
 
 @time eta = transform_singles_operators(eta)
 @time eta = transform_doubles_operators(eta)
 @time eta = transform_triples_operators(eta)
+@time eta = transform_quadruples_operators(eta)
 
-@time eta = look_for_tensor_replacements_smart(eta, make_exchange_transformer("t", "u")) |> SpinAdaptedSecondQuantization.simplify
-@time eta = look_for_tensor_replacements_smart(eta, make_C_p_E_transformer("t", "v")) |> SpinAdaptedSecondQuantization.simplify
-@time eta = look_for_tensor_replacements_smart(eta, make_C_m_E_transformer("t", "w")) |> SpinAdaptedSecondQuantization.simplify
+@time eta = put_fixed_tensor_in_scalar(eta) |> SpinAdaptedSecondQuantization.simplify
+@time eta = evaluate_trig(eta) |> SpinAdaptedSecondQuantization.simplify
 
 @time eta = look_for_tensor_replacements_smart(eta, make_exchange_transformer("x", "U1")) |> SpinAdaptedSecondQuantization.simplify
 @time eta = look_for_tensor_replacements_smart(eta, make_exchange_transformer_2("x", "U2")) |> SpinAdaptedSecondQuantization.simplify
@@ -72,11 +73,17 @@ eq = deserialize("additional_t_t_store")
 @time eta = look_for_tensor_replacements_smart(eta, make_C_m_E_transformer("x", "W1")) |> SpinAdaptedSecondQuantization.simplify
 @time eta = look_for_tensor_replacements_smart(eta, make_C_m_E_transformer_2("x", "W2")) |> SpinAdaptedSecondQuantization.simplify
 
-@time eta = put_fixed_tensor_in_scalar(eta) |> SpinAdaptedSecondQuantization.simplify
-@time eta = put_trig_in_scalar(eta) |> SpinAdaptedSecondQuantization.simplify
+@time eta = look_for_tensor_replacements_smart(eta, make_exchange_transformer("t", "u")) |> SpinAdaptedSecondQuantization.simplify
+@time eta = look_for_tensor_replacements_smart(eta, make_C_p_E_transformer("t", "v")) |> SpinAdaptedSecondQuantization.simplify
+@time eta = look_for_tensor_replacements_smart(eta, make_C_m_E_transformer("t", "w")) |> SpinAdaptedSecondQuantization.simplify
+
+@time eta = transform_singles_operators(eta)
+@time eta = transform_doubles_operators(eta)
+@time eta = transform_triples_operators(eta)
+@time eta = transform_quadruples_operators(eta)
 
 disable_color()
-open("eta_4.txt", "w") do io
+open("t_eta_2.txt", "w") do io
      println(io, eta)
 end
 

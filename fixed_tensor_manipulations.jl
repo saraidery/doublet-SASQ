@@ -83,6 +83,41 @@ function put_trig_in_scalar(ex)
 	return SpinAdaptedSecondQuantization.Expression(new_terms)
 end
 
+function evaluate_trig_tensors(tensors)
+
+	n_ct = count([t.symbol == "cos(θ)" for t in tensors])
+	n_st = count([t.symbol == "sin(θ)" for t in tensors])
+
+	other_tensors = tensors[[(t.symbol != "sin(θ)" && t.symbol != "cos(θ)") for t in tensors]]
+
+	new_scalar = cos(pi/4)^n_ct * cos(pi/4)^n_st
+
+	return other_tensors, new_scalar
+
+end
+
+
+function evaluate_trig(ex)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	 for t = ex.terms
+		tensors, new_scalar = evaluate_trig_tensors(t.tensors)
+
+		new_term = SpinAdaptedSecondQuantization.Term(
+		t.scalar * new_scalar,
+		t.sum_indices,
+		t.deltas,
+		tensors,
+		t.operators,
+		t.constraints
+		)
+
+		push!(new_terms, new_term)
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
 function put_fixed_tensor_in_scalar(ex)
 
 	ex = rename_fixed_tensors(ex)
@@ -207,7 +242,7 @@ function get_reduced_tensor(tensor)
 		elseif (index == 2)
 			name = name * "A"
 		else
-			name = name * "_"
+			name = name * "x"
 		end
 	end
 	new_tensor = SpinAdaptedSecondQuantization.RealTensor(name, indices)

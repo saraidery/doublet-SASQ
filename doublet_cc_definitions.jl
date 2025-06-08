@@ -148,7 +148,7 @@ end
 
 χ(n) = prod(SpinAdaptedSecondQuantization.E(i-1,i) for i = 4:2:2*n+2) * occupied(4:2:2*n+2...) * virtual(3:2:2*n+2...)
 Tn(n) = 1 // factorial(n) * ∑(psym_tensor("t", 3:2*n+2...) * χ(n), 3:2*n+2)
-Sn = ∑(real_tensor("x", 4,3,6,5)*E(4,3)*E(6,1)*E(2,5)*occupied(1,3,5)*virtual(2,4,6), 3:6)
+Sn = ∑(real_tensor("s", 4,3,6,5)*E(4,3)*E(6,1)*E(2,5)*occupied(1,3,5)*virtual(2,4,6), 3:6)
 Rn(n) = 1 // factorial(n) * ∑(psym_tensor("r", 1:2*n...) * χ(n), 1:2*n)
 Ln(n) = 1 // factorial(n) * ∑(psym_tensor("l", 1:2*n...) * χdag(n), 1:2*n)
 χd(n) = prod((fermiondag(2i-1,α)*fermion(2i,α) + fermiondag(2i-1,β)*fermion(2i,β)) for i = 2:n+1) * occupied(3:2:2(n+1)...) * virtual(4:2:2(n+1)...)
@@ -212,7 +212,6 @@ function is_legal_operator(term)
 				indices_k = (term.operators[k].p, term.operators[k].q)
 				if (1 in indices_i && 1 in indices_j && 1 in indices_k) ||
 				   (2 in indices_i && 2 in indices_j && 2 in indices_k)
-				    println(op, term.operators[j], term.operators[k])
 					return false
 				end
 			end
@@ -233,14 +232,12 @@ function is_legal_amplitude(tensors)
 		indices = t.indices[[s != 1 for s in t.indices]]
 
 		if length(indices) < 3
-			println(t.symbol, t.indices)
 			return false
 		end
 
 		indices = t.indices[[s != 2 for s in t.indices]]
 
 		if length(indices) < 3
-			println(t.symbol, t.indices)
 			return false
 		end
 
@@ -257,7 +254,6 @@ function is_legal_delta(deltas)
 		indices = d.indices[[s != 1 && s!= 2 for s in d.indices]]
 
 		if length(indices) == 2
-			println(indices)
 			return false
 		end
 
@@ -323,6 +319,36 @@ function remove_illegal_amplitudes(eq)
 	end
 	return SpinAdaptedSecondQuantization.Expression(new_terms)
 end
+
+function is_new(tensors)
+
+	relevant_tensors = tensors[[(t.symbol == "x") for t in tensors]]
+	if length(relevant_tensors) == 0
+		return false
+	else
+		return true
+	end
+end
+
+function remove_old_contributions(eq)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	for term in eq.terms
+		if (is_new(term.tensors))
+			new_term = SpinAdaptedSecondQuantization.Term(
+				term.scalar,
+				term.sum_indices,
+				term.deltas,
+				term.tensors,
+				term.operators,
+				term.constraints
+			)
+			push!(new_terms, new_term)
+		end
+	end
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
 
 function project_equation_on_bra(bra, op, ket_order, T2, n_T2)
 
@@ -529,7 +555,8 @@ function transform_triples_operators(eq)
 			&& isa(term.operators[3], SpinAdaptedSecondQuantization.SingletExcitationOperator))
 
 			factor, new_operators = transform_operator(term.operators[1])
-			push!(new_operators, term.operators[2], term.operators[3])
+			push!(new_operators, term.operators[2])
+			push!(new_operators, term.operators[3])
 
 		elseif (isa(term.operators[1], SpinExcitationOperator)
 				&& isa(term.operators[2], SpinExcitationOperator)
@@ -539,6 +566,7 @@ function transform_triples_operators(eq)
 			op_2 = swap_spin_operator(term.operators[2])
 			new_operators = [op_1, op_2, term.operators[3]]
 			factor = 1
+
 
 		else
 			factor = 1
@@ -558,4 +586,117 @@ function transform_triples_operators(eq)
 
 	return SpinAdaptedSecondQuantization.Expression(new_terms)
 
+end
+
+
+function transform_quadruples_operators(eq)
+
+	if length(get_ex_of_order(eq, 4).terms) != length(eq.terms)
+		println("Terms are not all quadruples. Will not transform!")
+		return eq
+	end
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	for term in eq.terms
+
+		if (isa(term.operators[1], SpinExcitationOperator)
+			&& isa(term.operators[2], SpinAdaptedSecondQuantization.SingletExcitationOperator)
+			&& isa(term.operators[3], SpinAdaptedSecondQuantization.SingletExcitationOperator)
+			&& isa(term.operators[4], SpinAdaptedSecondQuantization.SingletExcitationOperator)
+			&& term.operators[1].spin == α)
+
+			op_1 = swap_spin_operator(term.operators[1])
+			new_operators = [op_1, term.operators[2], term.operators[3], term.operators[4]]
+			factor = 1
+
+
+		else
+			factor = 1
+			new_operators = term.operators
+		end
+
+			new_term = SpinAdaptedSecondQuantization.Term(
+				term.scalar*factor,
+				term.sum_indices,
+				term.deltas,
+				term.tensors,
+				new_operators,
+				term.constraints
+			)
+			push!(new_terms, new_term)
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+
+end
+
+
+function separate_δ(eq)
+
+	new_terms_δ = SpinAdaptedSecondQuantization.Term[]
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+
+	for term in eq.terms
+		if term.deltas == []
+			push!(new_terms, term)
+		else
+			push!(new_terms_δ, term)
+		end
+	end
+
+	return SpinAdaptedSecondQuantization.Expression(new_terms), SpinAdaptedSecondQuantization.Expression(new_terms_δ)
+end
+
+function extract_δ(eq, p, q)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+
+	for term in eq.terms
+		if length(term.deltas) == 1
+
+			if p in term.deltas[1].indices && q in term.deltas[1].indices
+			   push!(new_terms, term)
+			end
+		end
+	end
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
+
+function extract_δ(eq, p, q, r, s)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+
+	for term in eq.terms
+		if length(term.deltas) == 2
+
+			if ((p in term.deltas[1].indices && q in term.deltas[1].indices) ||
+				(p in term.deltas[2].indices && q in term.deltas[2].indices)) &&
+				((r in term.deltas[1].indices && s in term.deltas[1].indices) ||
+				(r in term.deltas[2].indices && s in term.deltas[2].indices))
+			   push!(new_terms, term)
+			end
+		end
+	end
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
+end
+
+
+function strip_δ(eq)
+
+	new_terms = SpinAdaptedSecondQuantization.Term[]
+	new_deltas = SpinAdaptedSecondQuantization.KroneckerDelta[]
+
+	for term in eq.terms
+		new_term = SpinAdaptedSecondQuantization.Term(
+				term.scalar,
+				term.sum_indices,
+				new_deltas,
+				term.tensors,
+				term.operators,
+				term.constraints)
+
+			   push!(new_terms, new_term)
+	end
+	return SpinAdaptedSecondQuantization.Expression(new_terms)
 end
