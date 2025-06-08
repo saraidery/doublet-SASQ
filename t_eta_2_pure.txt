@@ -1,0 +1,162 @@
++ 0.5 δ_Ij E^β_Ib E^α_kc
++ 0.5 δ_Ij E^β_Ic E^α_kb
+- 0.5 δ_Ab E^β_jA E^α_kc
+- 0.5 δ_Ab E^β_jc E^α_kA
++ 0.5 - 0.5 t_AI δ_Ik δ_Ab E^β_IA E^α_jc 
+- 0.5 t_AI - 0.5 δ_Ij δ_Ac E^β_IA E^α_kb 
+- 0.5 t_AI - 0.5 δ_Ij δ_Ac E^β_Ib E^α_kA 
++ 0.5 - 0.5 t_AI δ_Ik δ_Ab E^β_Ic E^α_jA 
++ 1.0 U1_bjck E^β_IA E^α_IA
+- 0.5 U1_cjbk E^β_IA E^α_IA
+- 0.5 δ_Ac U1_Akbj E^β_IA E^α_IA
++ 1.0 δ_Ab U1_Akcj E^β_IA E^α_IA
+- 0.5 δ_Ij U1_bIck E^β_IA E^α_IA
+- 0.5 δ_Ac U1_bjAk E^β_IA E^α_IA
+- 0.5 δ_Ik U1_bjcI E^β_IA E^α_IA
+- 0.5 δ_Ik U1_cIbj E^β_IA E^α_IA
++ 1.0 δ_Ij U1_cIbk E^β_IA E^α_IA
+- 0.5 δ_Ab U1_ckAj E^β_IA E^α_IA
+- 0.5 δ_Ik δ_Ab U1_AIcj E^β_IA E^α_IA
+- 0.5 δ_Ik δ_Ac U1_AjbI E^β_IA E^α_IA
++ 1.0 δ_Ij δ_Ac U1_AkbI E^β_IA E^α_IA
+- 0.5 δ_Ij δ_Ab U1_AkcI E^β_IA E^α_IA
++ 1.0 δ_Ik δ_Ac U1_bjAI E^β_IA E^α_IA
+- 0.5 δ_Ij δ_Ac U1_bkAI E^β_IA E^α_IA
++ 1.0 δ_Ik δ_Ab U1_cIAj E^β_IA E^α_IA
+- 0.5 δ_Ij δ_Ab U1_cIAk E^β_IA E^α_IA
++ 1.0 t_AI + 0.5 t_Ajck E^β_IA E^α_Ib
+- 0.5 t_AI - 0.5 t_Akcj E^β_IA E^α_Ib
++ 1.0 t_AI - 0.5 t_bIck E^β_IA E^α_jA
++ 0.5 - 0.5 t_AI t_bkcI E^β_IA E^α_jA
++ 0.5 - 0.5 t_AI t_AkbI E^β_IA E^α_jc
+- 0.5 t_AI - 0.5 t_AjcI E^β_IA E^α_kb
+- 0.5 t_AI - 0.5 t_AjcI E^β_Ib E^α_kA 
+- 0.5 t_Aj E^β_Ib E^α_kc
++ 0.5 - 0.5 t_AI t_AkbI E^β_Ic E^α_jA 
+- 0.5 t_Aj E^β_Ic E^α_kb
+- 0.5 t_bI E^β_jA E^α_kc
+- 0.5 t_bI E^β_jc E^α_kA
++ 0.5 t_AI - 0.5 δ_Ab t_Ak E^β_IA E^α_jc 
++ 0.5 t_AI + 0.5 δ_Ik t_bI E^β_IA E^α_jc 
++ 0.5 - 0.5 t_AI δ_Ac t_Aj E^β_IA E^α_kb 
+- 0.5 t_AI - 0.5 δ_Ij t_cI E^β_IA E^α_kb 
+- 0.5 t_AI δ_Ab t_Aj E^β_IA E^α_kc 
++ 0.5 t_AI δ_Ij t_bI E^β_IA E^α_kc 
++ 0.5 t_AI δ_Ik t_Aj E^β_Ib E^α_Ic 
++ 0.5 t_AI δ_Ij t_Ak E^β_Ib E^α_Ic 
++ 0.5 - 0.5 t_AI δ_Ac t_Aj E^β_Ib E^α_kA 
+- 0.5 t_AI - 0.5 δ_Ij t_cI E^β_Ib E^α_kA 
++ 0.5 t_AI - 0.5 δ_Ab t_Ak E^β_Ic E^α_jA 
++ 0.5 t_AI + 0.5 δ_Ik t_bI E^β_Ic E^α_jA 
+- 0.5 t_AI δ_Ab t_Aj E^β_Ic E^α_kA 
++ 0.5 t_AI δ_Ij t_bI E^β_Ic E^α_kA 
+- 0.5 t_AI δ_Ac t_bI E^β_jA E^α_kA 
+- 0.5 t_AI δ_Ab t_cI E^β_jA E^α_kA 
+- 1.0 δ_Ik δ_Ac t_Aj E^β_IA E^α_Ib
+- 1.0 δ_Ij δ_Ac t_Ak E^β_IA E^α_Ib
+- 1.0 δ_Ik δ_Ac t_bI E^β_IA E^α_jA
+- 1.0 δ_Ik δ_Ab t_cI E^β_IA E^α_jA
++ 0.5 t_AI + 0.5 u_Akbj E^β_IA E^α_Ic
++ 0.5 t_AI - 0.5 u_bjcI E^β_IA E^α_kA
+- 1.0 δ_Ac u_Akbj E^β_IA E^α_IA
++ 0.5 δ_Ab u_Akcj E^β_IA E^α_IA
++ 1.0 δ_Ik u_bjcI E^β_IA E^α_IA
+- 0.5 δ_Ij u_bkcI E^β_IA E^α_IA
+- 0.5 δ_Ik u_AjcI E^β_IA E^α_Ib
++ 1.0 δ_Ij u_AkcI E^β_IA E^α_Ib
+- 0.5 δ_Ik u_AIbj E^β_IA E^α_Ic
+- 0.5 δ_Ij u_AkbI E^β_IA E^α_Ic
++ 0.5 δ_Ac u_AkbI E^β_IA E^α_jA
+- 1.0 δ_Ab u_AkcI E^β_IA E^α_jA
++ 0.5 δ_Ac u_AIbj E^β_IA E^α_kA
++ 0.5 δ_Ab u_AjcI E^β_IA E^α_kA
+- 0.5 t_AI - 0.5 t_Ak t_bI E^β_IA E^α_jc
++ 0.5 - 0.5 t_AI t_Aj t_cI E^β_IA E^α_kb
+- 0.5 t_AI t_Aj t_Ak E^β_Ib E^α_Ic 
++ 0.5 - 0.5 t_AI t_Aj t_cI E^β_Ib E^α_kA 
+- 0.5 t_AI - 0.5 t_Ak t_bI E^β_Ic E^α_jA 
+- 0.5 t_AI t_bI t_cI E^β_jA E^α_kA 
++ 1.0 δ_Ac t_Aj t_Ak E^β_IA E^α_Ib
+- 1.0 δ_Ik t_Aj t_cI E^β_IA E^α_Ib
+- 1.0 δ_Ij t_Ak t_cI E^β_IA E^α_Ib
++ 0.5 δ_Ik t_Aj t_bI E^β_IA E^α_Ic
++ 0.5 δ_Ij t_Ak t_bI E^β_IA E^α_Ic
++ 1.0 δ_Ac t_Ak t_bI E^β_IA E^α_jA
++ 1.0 δ_Ab t_Ak t_cI E^β_IA E^α_jA
+- 1.0 δ_Ik t_bI t_cI E^β_IA E^α_jA
+- 0.5 δ_Ac t_Aj t_bI E^β_IA E^α_kA
+- 0.5 δ_Ab t_Aj t_cI E^β_IA E^α_kA
++ 0.5 t_Aj u_bkcI E^β_IA E^α_IA
+- 1.0 t_Ak u_bjcI E^β_IA E^α_IA
++ 0.5 t_bI u_Akcj E^β_IA E^α_IA
+- 1.0 t_cI u_Akbj E^β_IA E^α_IA
+- 1.0 t_Aj u_AkcI E^β_IA E^α_Ib
++ 0.5 t_Ak u_AjcI E^β_IA E^α_Ib
++ 0.5 t_Aj u_AkbI E^β_IA E^α_Ic
++ 0.5 t_Ak u_AIbj E^β_IA E^α_Ic
+- 1.0 t_bI u_AkcI E^β_IA E^α_jA
++ 0.5 t_cI u_AkbI E^β_IA E^α_jA
++ 0.5 t_bI u_AjcI E^β_IA E^α_kA
++ 0.5 t_cI u_AIbj E^β_IA E^α_kA
++ 1.0 t_Aj t_Ak t_cI E^β_IA E^α_Ib
+- 0.5 t_Aj t_Ak t_bI E^β_IA E^α_Ic
++ 1.0 t_Ak t_bI t_cI E^β_IA E^α_jA
+- 0.5 t_Aj t_bI t_cI E^β_IA E^α_kA
+- 0.25 t_AI^3 + 0.25 t_AI E_jb E_kc
+- 0.25 t_AI^2 δ_Ij E_Ib E_kc
+- 0.25 t_AI^2 - 0.5 t_AI - 0.25 δ_Ik E_Ic E_jb
++ 0.25 t_AI δ_Ij E_Ic E_kb
++ 0.25 t_AI^2 δ_Ab E_jA E_kc
++ 0.25 t_AI^2 - 0.5 t_AI + 0.25 δ_Ac E_jb E_kA
++ 0.25 t_AI δ_Ab E_jc E_kA
++ 0.75 t_AI δ_Ik δ_Ac E_IA E_jb
++ 0.5 t_AI - 0.25 δ_Ij δ_Ac E_Ib E_kA
++ 0.5 t_AI + 0.25 δ_Ik δ_Ab E_Ic E_jA
+- 0.25 t_Akcj E_IA E_Ib
++ 0.25 t_bkcI E_IA E_jA
+- 1.0 t_AI t_AIck E_IA E_jb
++ 1.25 t_AI  t_AkcI E_IA E_jb
++ 0.5 t_AI t_AIbk E_IA E_jc
+- 0.5 t_AI - 0.25 t_AkbI E_IA E_jc
++ 0.5 t_AI t_AIcj E_IA E_kb
++ 0.25 - 0.5 t_AI t_AjcI E_IA E_kb
++ 0.25 t_AjcI E_Ib E_kA
++ 0.25 t_AI^2 t_Aj E_Ib E_kc
+- 0.25 t_AkbI E_Ic E_jA
++ 0.25 t_AI^2 + 0.5 t_AI + 0.25 t_Ak E_Ic E_jb
+- 0.25 t_AI t_Aj E_Ic E_kb
++ 0.25 t_AI^2 t_bI E_jA E_kc
++ 0.25 t_AI^2 - 0.5 t_AI + 0.25 t_cI E_jb E_kA
++ 0.25 t_AI t_bI E_jc E_kA
+- 0.75 t_AI δ_Ac t_Ak E_IA E_jb
++ 0.75 t_AI δ_Ik t_cI E_IA E_jb
+- 0.5 t_AI δ_Ik t_bI E_IA E_jc
++ 0.5 t_AI δ_Ac t_Aj E_IA E_kb
++ 0.25 t_AI δ_Ab t_Aj E_IA E_kc
+- 0.25 t_AI δ_Ij t_bI E_IA E_kc
++ 0.25 δ_Ik t_Aj E_Ib E_Ic
++ 0.25 δ_Ij t_Ak E_Ib E_Ic
++ 0.25 δ_Ac t_Aj E_Ib E_kA
++ 0.5 t_AI - 0.25 δ_Ij t_cI E_Ib E_kA
+- 0.5 t_AI - 0.25 δ_Ab t_Ak E_Ic E_jA
++ 0.25 δ_Ik t_bI E_Ic E_jA
++ 0.25 t_AI δ_Ab t_Aj E_Ic E_kA
+- 0.25 t_AI δ_Ij t_bI E_Ic E_kA
++ 0.25 δ_Ac t_bI E_jA E_kA
++ 0.25 δ_Ab t_cI E_jA E_kA
++ 0.25 δ_Ik δ_Ab t_Aj E_IA E_Ic
++ 0.25 δ_Ij δ_Ab t_Ak E_IA E_Ic
++ 0.25 δ_Ij δ_Ac t_bI E_IA E_kA
++ 0.25 δ_Ij δ_Ab t_cI E_IA E_kA
++ 0.25 u_Akbj E_IA E_Ic
+- 0.25 u_bjcI E_IA E_kA
+- 0.5 t_AI u_AIbj E_IA E_kc
+- 0.75 t_AI t_Ak t_cI E_IA E_jb
++ 0.5 t_AI t_Ak t_bI E_IA E_jc
++ 0.5 t_AI t_Aj t_cI E_IA E_kb
+- 0.25 t_Aj t_Ak E_Ib E_Ic
++ 0.25 t_Aj t_cI E_Ib E_kA
+- 0.25 t_Ak t_bI E_Ic E_jA
++ 0.25 t_bI t_cI E_jA E_kA
+- 0.25 δ_Ab t_Aj t_Ak E_IA E_Ic
++ 0.25 δ_Ij t_bI t_cI E_IA E_kA

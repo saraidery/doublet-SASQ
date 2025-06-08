@@ -1,0 +1,13 @@
++ t_AI sin(θ)^3 cos(θ) - t_AI sin(θ) cos(θ)^3 + (1 - t_AI^2) sin(θ)^2 cos(θ)^2 δ_Ik δ_Ab E_jc 
++ t_AI sin(θ)^2 cos(θ)^2 + sin(θ) cos(θ)^3 - sin(θ) cos(θ)/2 U1_bkAI E_jc 
+- t_AI sin(θ)^2 cos(θ)^2 - sin(θ) cos(θ)^3 + sin(θ) cos(θ)/2 V1_AIbk E_jc 
+- t_AI sin(θ)^2 cos(θ)^2 + t_AI cos(θ)^4 + (t_AI^2 - 1) sin(θ) cos(θ)^3 δ_Ab t_Ak E_jc
++ t_AI sin(θ)^4 - t_AI sin(θ)^2 cos(θ)^2 + (1 - t_AI^2) sin(θ)^3 cos(θ) δ_Ik t_bI E_jc
+
+- t_AI sin(θ)^3 cos(θ) + t_AI sin(θ) cos(θ)^3 + (t_AI^2 - 1) sin(θ)^2 cos(θ)^2 t_Ak t_bI E_jc
+
+- 2 t_AI sin(θ)^3 cos(θ) u_AIbk E_jc
++ 3 t_AI sin(θ)^3 cos(θ) t_AkbI E_jc
++ t_AI sin(θ) cos(θ)^3 - sin(θ)^2 cos(θ)^2 u_AIbk E_jc 
+- t_AI sin(θ) cos(θ) - sin(θ)^4 + sin(θ)^2/2 - cos(θ)^2/2 u_AkbI E_jc 
++ 3 t_AI^2 sin(θ)^2 cos(θ)^2 w_AIbk E_jc 

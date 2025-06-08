@@ -1,0 +1,4 @@
++ sin(θ)^2 cos(θ)^2 δ_Ij δ_Ac t_bI E_IA E_kA 
++ sin(θ)^2 cos(θ)^2 δ_Ij δ_Ab t_cI E_IA E_kA 
+- 2 sin(θ)^3 cos(θ) + sin(θ) cos(θ)/2 u_bjcI E_IA E_kA 
++ sin(θ)^3 cos(θ) δ_Ij t_bI t_cI E_IA E_kA 

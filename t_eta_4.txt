@@ -1,0 +1,3 @@
+-0.25*t_AI E^α_pq E^β_pq E_rs E_tu C(p∈o, q∈v, r∈o, s∈v, t∈o, u∈v)
+- 0.500000000000000 E^α_pq E^β_pu E_rs E_tq C(p∈o, q∈v, r∈o, s∈v, t∈o, u∈v)
++ 0.500000000000000 E^α_pq E^β_tq E_pu E_rs C(p∈o, q∈v, r∈o, s∈v, t∈o, u∈v)

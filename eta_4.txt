@@ -1,0 +1,5 @@
+-t_AI*sin(θ)^2*cos(θ)^2 E^α_pq E^β_pq E_rs E_tu C(p∈o, q∈v, r∈o, s∈v, t∈o, u∈v)
++ -2*sin(θ)^3*cos(θ) E^α_pq E^β_pu E_rs E_tq C(p∈o, q∈v, r∈o, s∈v, t∈o, u∈v)
++ 2*sin(θ)*cos(θ)^3 E^α_pq E^β_tq E_pu E_rs C(p∈o, q∈v, r∈o, s∈v, t∈o, u∈v)
++ 2*sin(θ)^3*cos(θ) E^α_pq E_pu E_rs E_tq C(p∈o, q∈v, r∈o, s∈v, t∈o, u∈v)
++ -sin(θ)*cos(θ) E^β_pq E_pu E_rs E_tq C(p∈o, q∈v, r∈o, s∈v, t∈o, u∈v)

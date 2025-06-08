@@ -1,0 +1,2 @@
+- t_AI sin(θ)^4 + t_AI sin(θ)^2 cos(θ)^2 + t_AI sin(θ)^2/2 - sin(θ)^3 cos(θ) + sin(θ) cos(θ)/2 δ_Ij E_Ic E_kb 
++ t_AI sin(θ)^3 cos(θ) - t_AI sin(θ) cos(θ)^3 - t_AI sin(θ) cos(θ)/2 + sin(θ)^2 cos(θ)^2 - cos(θ)^2/2 t_Aj E_Ic E_kb 

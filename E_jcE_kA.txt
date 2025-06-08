@@ -1,0 +1,2 @@
++ 2 t_AI sin(θ)^2 cos(θ)^2 - t_AI cos(θ)^2/2 - sin(θ)^3 cos(θ) + sin(θ) cos(θ)/2 δ_Ab E_jc E_kA 
++ 2 t_AI sin(θ)^3 cos(θ) - t_AI sin(θ) cos(θ)/2 - sin(θ)^4 + sin(θ)^2/2 t_bI E_jc E_kA 

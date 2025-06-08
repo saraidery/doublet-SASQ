@@ -1,0 +1,1 @@
+- t_AI^2 sin(θ) cos(θ)^3 - t_AI sin(θ)^4 + t_AI sin(θ)^2/2 - t_AI cos(θ)^2/2 + (1/2 - t_AI^2/2) sin(θ) cos(θ) + (2 t_AI^2 - 1) sin(θ)^3 cos(θ) + (-t_AI^3 + 2 t_AI) sin(θ)^2 cos(θ)^2 E_jb E_kc 

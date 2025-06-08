@@ -1,0 +1,44 @@
+P{rs,tu} (
+	+ cos(θ) sin(θ) u_srut 
+	- 2 cos(θ) sin^3(θ) u_srut 
+	+ 2 cos^2(θ) sin^2(θ) t_AI u_srut
+	+ 2 cos^2(θ) sin^2(θ) t_Ar z_utsI
+	+ 2 cos^2(θ) sin^2(θ) t_sI z_utAr
+	- δ_Au cos(θ) sin(θ) w_srAt
+	+ 2 δ_Au cos^3(θ) sin(θ) z_srAt
+	+ 2 δ_Au cos(θ) sin^3(θ) w_srAt
+	- 2 δ_Au cos^2(θ) sin^2(θ) t_AI w_srAt
+	+ 2 δ_Au cos^2(θ) sin^2(θ) t_Ar u_AIst
+	+ 2 δ_Au cos^2(θ) sin^2(θ) t_Ar u_sIAt
+	+ 2 δ_Au cos^2(θ) sin^2(θ) t_At z_srAI
+	+ 2 δ_Au cos^2(θ) sin^2(θ) t_sI u_ArAt
+	- δ_Ir cos(θ) sin(θ) w_utsI 
+	+ 2 δ_Ir cos(θ) sin^3(θ) u_sIut 
+	+ 2 δ_Ir cos(θ) sin^3(θ) u_utsI
+	- 2 δ_Ir cos^2(θ) sin^2(θ) t_AI w_utsI
+	+ 2 δ_Ir cos^2(θ) sin^2(θ) t_At v_uIsI
+	+ 2 δ_Ir cos^2(θ) sin^2(θ) t_sI z_utAI
+	+ 2 δ_Ir cos^2(θ) sin^2(θ) t_uI v_AIst
+	+ 2 δ_Ir cos^2(θ) sin^2(θ) t_uI v_AtsI
+	+ δ_It δ_Au cos(θ) sin(θ) u_AIsr
+	+ δ_It δ_Au cos(θ) sin(θ) u_srAI
+	+ 2 δ_It δ_Au cos^3(θ) sin(θ) z_srAI
+	- 2 δ_It δ_Au cos(θ) sin^3(θ) w_srAI
+	+ 2 δ_It δ_Au cos^2(θ) sin^2(θ) t_AI u_AIsr
+	+ 2 δ_It δ_Au cos^2(θ) sin^2(θ) t_AI u_srAI
+	- 2 δ_It δ_Au cos^2(θ) sin^2(θ) t_Ar x_AIsI
+	- 2 δ_It δ_Au cos^2(θ) sin^2(θ) t_Ar x_sIAI
+	- 2 δ_It δ_Au cos^2(θ) sin^2(θ) t_sI x_AIAr
+	- 2 δ_It δ_Au cos^2(θ) sin^2(θ) t_sI x_ArAI
+	- δ_Ir δ_Au cos(θ) sin(θ) w_AIst
+	+ 2 δ_Ir δ_Au cos^3(θ) sin(θ) v_AIst
+	+ 2 δ_Ir δ_Au cos^3(θ) sin(θ) v_AtsI
+	- 2 δ_Ir δ_Au cos(θ) sin^3(θ) w_sIAt
+	- 2 δ_Ir δ_Au cos^2(θ) sin^2(θ) t_AI w_AIst
+	+ 2 δ_Ir δ_Au cos^2(θ) sin^2(θ) t_At v_AIsI
+	+ 2 δ_Ir δ_Au cos^2(θ) sin^2(θ) t_sI u_AIAt
+	- 2 δ_It δ_Asu cos^3(θ) sin(θ) u_ArAI
+	+ 2 δ_Asu cos^3(θ) sin(θ) x_AtAr
+	+ 2 δ_Irt δ_Au cos(θ) sin^3(θ) v_sIAI
+	- 2 δ_Irt cos(θ) sin^3(θ) x_sIuI 
+)

@@ -1,0 +1,32 @@
+P{rs,ut}(
++ cos^2(θ) sin^2(θ) z_stAI E_ru
++ δ_As cos^2(θ) sin^2(θ) u_AIAt E_ru
++ δ_It cos^2(θ) sin^2(θ) v_AIsI E_ru
+- δ_It δ_As cos^2(θ) sin^2(θ) x_AIAI E_ru
+- 2 cos^2(θ) sin^2(θ) z_utAI E_rs
+- 2 δ_Au cos^2(θ) sin^2(θ) u_AIAt E_rs
+- 2 δ_It cos^2(θ) sin^2(θ) v_AIuI E_rs
++ 2 δ_It δ_Au cos^2(θ) sin^2(θ) x_AIAI E_rs
++ cos^2(θ) sin^2(θ) z_utsI E_rA
++ δ_Au cos^2(θ) sin^2(θ) u_AIst E_rA
++ δ_Au cos^2(θ) sin^2(θ) u_sIAt E_rA
+- δ_It δ_Au cos^2(θ) sin^2(θ) x_AIsI E_rA
+- δ_It δ_Au cos^2(θ) sin^2(θ) x_sIAI E_rA
++ δ_As cos^2(θ) sin^2(θ) z_utAI E_rA
++ δ_It δ_As cos^2(θ) sin^2(θ) v_AIuI E_rA
++ δ_It cos^2(θ) sin^2(θ) v_sIuI E_rA
++ cos^2(θ) sin^2(θ) z_utAr E_Is
++ δ_It cos^2(θ) sin^2(θ) v_AIur E_Is
++ δ_It cos^2(θ) sin^2(θ) v_AruI E_I
+- δ_It δ_Au cos^2(θ) sin^2(θ) x_AIAr E_Is
+- δ_It δ_Au cos^2(θ) sin^2(θ) x_ArAI E_Is
++ δ_Ir cos^2(θ) sin^2(θ) z_utAI E_Is
++ δ_Ir δ_Au cos^2(θ) sin^2(θ) u_AIAt E_Is
++ δ_Au cos^2(θ) sin^2(θ) u_ArAt E_Is
++ cos^2(θ) sin^2(θ) u_srut E_IA
+- δ_Ir cos^2(θ) sin^2(θ) w_utsI E_IA
+- δ_As cos^2(θ) sin^2(θ) w_utAr E_IA
++ δ_It δ_Au cos^2(θ) sin^2(θ) u_AIsr E_IA
++ δ_It δ_Au cos^2(θ) sin^2(θ) u_srAI E_IA
+- δ_It δ_As cos^2(θ) sin^2(θ) w_AIur E_IA
+)

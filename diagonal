@@ -1,0 +1,19 @@
+using SpinAdaptedSecondQuantization
+
+include("doublet_cc_definitions.jl")
+include("fixed_tensor_manipulations.jl")
+include("code_generation_helpers.jl")
+
+# Define translator for nice prints
+trans = translate(OccupiedOrbital => 1:2:20, VirtualOrbital => 2:2:20)
+
+# Get operators (T1 transformed)
+H = get_H()
+P = get_doublet_P()
+
+tau = E(4, 3) * E(6, 5) * occupied(3) * occupied(5) * virtual(4) * virtual(6)
+P_comm = commutator(P, tau)
+
+op = χd(2)*P_comm
+
+res = act_on_ket(op, 0)

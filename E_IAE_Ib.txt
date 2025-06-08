@@ -1,0 +1,2 @@
+- sin(θ) cos(θ)^3 t_Akcj E_IA E_Ib 
++ sin(θ)^3 cos(θ) - sin(θ) cos(θ)/2 v_Ajck E_IA E_Ib 

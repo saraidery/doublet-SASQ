@@ -1,0 +1,3 @@
++ -0.25 t_AI E^α_IA E^β_IA E_jb E_kc 
+- 0.500000000000000 E^α_IA E^β_Ic E_jb E_kA 
++ 0.500000000000000 E^α_IA E^β_kA E_Ic E_jb 

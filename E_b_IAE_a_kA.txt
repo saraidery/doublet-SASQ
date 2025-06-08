@@ -1,0 +1,8 @@
++ 2 t_AI sin(θ)^2 cos(θ)^2 - 2 sin(θ) cos(θ)^3 u_bjcI E^β_IA E^α_kA 
++ 2 sin(θ) cos(θ)^3 δ_Ac u_AIbj E^β_IA E^α_kA 
++ 2 sin(θ) cos(θ)^3 δ_Ab u_AjcI E^β_IA E^α_kA 
+- 2 sin(θ) cos(θ)^3 δ_Ac t_Aj t_bI E^β_IA E^α_kA 
+- 2 sin(θ) cos(θ)^3 δ_Ab t_Aj t_cI E^β_IA E^α_kA 
++ 2 sin(θ)^2 cos(θ)^2 t_bI u_AjcI E^β_IA E^α_kA 
++ 2 sin(θ)^2 cos(θ)^2 t_cI u_AIbj E^β_IA E^α_kA 
+- 2 sin(θ)^2 cos(θ)^2 t_Aj t_bI t_cI E^β_IA E^α_kA 

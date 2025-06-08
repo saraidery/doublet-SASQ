@@ -1,0 +1,103 @@
++ 12*t_AI*sin(θ)^2*cos(θ)^2 (t_AIcj w_AIbk - u_AIbj w_AIck)
+
+(+ 2*sin(θ)*cos(θ)^3 - sin(θ)*cos(θ)) t_AIAj v_bIck
+(- 2*t_AI*sin(θ)^3*cos(θ) + 2*t_AI*sin(θ)*cos(θ)^3 + (2*t_AI^2 - 2)*sin(θ)^2*cos(θ)^2 )t_Aj v_bIck
+
+- sin(θ)*cos(θ) t_AIbI v_Ajck
+(- 2*t_AI*sin(θ)^3*cos(θ) + 2*t_AI*sin(θ)*cos(θ)^3 + (2*t_AI^2 - 2)*sin(θ)^2*cos(θ)^2) t_bI v_Ajck
++ 2*sin(θ)*cos(θ)^3 ( t_Aj t_cI - t_AjcI) v_AIbk
+- 2*sin(θ)^3*cos(θ) t_Ak t_bI v_AIcj
+
++ (2*sin(θ)*cos(θ) u_AkcI - 2*sin(θ)*cos(θ)^3 u_AIck) u_AIbj
+
++ 2*sin(θ)^2*cos(θ)^2 t_AIAk t_cI u_AIbj
++ sin(θ)^3*cos(θ) (8*t_AIck - 10*t_AkcI) u_AIbj
++ 2*sin(θ)^2*cos(θ)^2 t_AIcI t_Ak u_AIbj
+(- 4*t_AI*sin(θ)^2*cos(θ)^2 + 2*sin(θ)^3*cos(θ) - 2*sin(θ)*cos(θ)^3) t_Ak t_cI u_AIbj
+
+
++ (2*sin(θ)*cos(θ)^3 t_AIcj - 6*t_AI*sin(θ)^2*cos(θ)^2 t_AjcI + 2*t_AI*sin(θ)^2*cos(θ)^2 t_Aj t_cI ) u_AIbk
++ 2*t_AI*sin(θ)^2*cos(θ)^2 t_AIAj u_bIck
+- 2*sin(θ)*cos(θ) t_AIbk u_AjcI
+
++ (2*sin(θ)^3*cos(θ) t_AIAj + 2*t_AIAI*sin(θ)^2*cos(θ)^2 t_Aj) u_bkcI
+
+- 4*sin(θ)^2*cos(θ)^2 (t_AIAj t_bI + t_AIbI t_Aj) u_AkcI
+- 4*t_AI*sin(θ)^2*cos(θ)^2 + 2*sin(θ)^3*cos(θ) - 2*sin(θ)*cos(θ)^3 t_Aj t_bI u_AkcI
+
++ 2*sin(θ)*cos(θ) (sin(θ)*cos(θ)*(t_AIAj t_cI + t_AIcI t_Aj) + sin(θ)^2*t_Aj t_cI) u_AkbI
+
++ 2*t_AI*sin(θ)^2*cos(θ)^2 - 4*sin(θ)^3*cos(θ) - 2*sin(θ)*cos(θ)^3 + sin(θ)*cos(θ) t_AIAk u_bjcI
++ 2*t_AI*sin(θ)^3*cos(θ) - 2*t_AI*sin(θ)*cos(θ)^3 + (-2*t_AI^2 - 4*t_AIAI + 2)*sin(θ)^2*cos(θ)^2 t_Ak u_bjcI
+
++ 2*t_AI*sin(θ)^2*cos(θ)^2 + 2*sin(θ)*cos(θ)^3 + sin(θ)*cos(θ) t_AIcI u_Akbj
++ 2*t_AI*sin(θ)^3*cos(θ) - 2*t_AI*sin(θ)*cos(θ)^3 + (-2*t_AI^2 - 4*t_AIAI + 2)*sin(θ)^2*cos(θ)^2 t_cI u_Akbj
++ 2*sin(θ)cos(θ)* (sin(θ)cos(θ)(t_AIAk t_bI + t_AIbI t_Ak) - cos(θ)^2 t_Ak t_bI) u_AjcI
+
++ 2*t_AIAI*sin(θ)^2*cos(θ)^2 t_bI u_Akcj
++ 2*t_AI*sin(θ)^2*cos(θ)^2 + 2*sin(θ)*cos(θ)^3 t_AIbI u_Ajck
++ 2*t_AI*sin(θ)^2*cos(θ)^2 t_Ak t_bI u_AIcj
+
++ sin(θ)^3*cos(θ) (10*t_AjcI - 8*t_AIcj) t_AIbk
+
++ 10*sin(θ)^3*cos(θ) - 4*sin(θ)*cos(θ) t_AIcj t_AkbI
+- 8*sin(θ)^3*cos(θ) + 5*sin(θ)*cos(θ) t_AjcI t_AkbI
+
++ 4*sin(θ)^2*cos(θ)^2 t_AIAj t_Ak t_bI t_cI
+- 2*sin(θ)^2*cos(θ)^2 t_AIAk t_Aj t_bI t_cI
+
+- 2*t_AI*sin(θ)^2*cos(θ)^2 - 2*sin(θ)*cos(θ)^3 + sin(θ)*cos(θ) t_AjAk t_bIcI
+- 2*t_AI*sin(θ)^2*cos(θ)^2 - 2*sin(θ)*cos(θ)^3 t_Aj t_Ak t_bIcI
+- 2*t_AI*sin(θ)^2*cos(θ)^2 + 2*sin(θ)^3*cos(θ) t_AjAk t_bI t_cI
+
++ 4*sin(θ)^2*cos(θ)^2 t_AIbI t_Aj t_Ak t_cI
+- 2*sin(θ)^2*cos(θ)^2 t_AIcI t_Aj t_Ak t_bI
+
+- 6*t_AI^2*sin(θ)^2*cos(θ)^2 W1_cjbk
+
++ 10*t_AI*sin(θ)^3*cos(θ) x_cjbk
+- 8*t_AI*sin(θ)^3*cos(θ) x_ckbj
+
+- 2*t_AI*sin(θ)^2*cos(θ)^2 + 4*sin(θ)^3*cos(θ) + 2*sin(θ)*cos(θ)^3 - sin(θ)*cos(θ) V1_Ajbk t_cI
+- 2*t_AI*sin(θ)^2*cos(θ)^2 - 2*sin(θ)^3*cos(θ) V1_Ajck t_bI
+
+- 2*t_AI*sin(θ)^2*cos(θ)^2 - 2*sin(θ)*cos(θ)^3 V1_bIck t_Aj
+- 2*t_AI*sin(θ)^2*cos(θ)^2 - 2*sin(θ)*cos(θ)^3 - sin(θ)*cos(θ) V1_cIbj t_Ak
+
+- 4*sin(θ)^2*cos(θ)^2 V1_AIbj u_AkcI
++ 2*sin(θ)^2*cos(θ)^2 V1_AIbk u_AjcI
++ 2*sin(θ)^2*cos(θ)^2 V1_AIcj u_AkbI
++ 2*sin(θ)^2*cos(θ)^2 V1_AIck u_AIbj
+
++ 8*sin(θ)^2*cos(θ)^2 V1_AIbj t_Ak t_cI
+- 4*sin(θ)^2*cos(θ)^2 V1_AIbk t_Aj t_cI
+- 4*sin(θ)^2*cos(θ)^2 V1_AIcj t_Ak t_bI
++ 2*sin(θ)^2*cos(θ)^2 V1_AIck t_Aj t_bI
+
+(- 10*t_AI*sin(θ)^3*cos(θ) + 2*t_AI*sin(θ)*cos(θ)^3 + 4*t_AI*sin(θ)*cos(θ) + (6*t_AI^2 + 4*t_AIAI - 2)*sin(θ)^2*cos(θ)^2 + 4*sin(θ)^4 - 2*sin(θ)^2 + 2*cos(θ)^2) U1_bjck
+(- 2*t_AI*sin(θ)*cos(θ) - 2*t_AIAI*sin(θ)^2*cos(θ)^2 - 2*sin(θ)^4 + sin(θ)^2 - cos(θ)^2) U1_cjbk
++ (2*t_AI*sin(θ)*cos(θ)^3 - 2*sin(θ)^2*cos(θ)^2) U1_ckbj
+
++ (sin(θ)*cos(θ) U1_cIbk) t_Aj
++ (sin(θ)*cos(θ) U1_bIck) t_Aj
++ (2*t_AI*sin(θ)^2*cos(θ)^2 + 2*sin(θ)*cos(θ)^3) U1_ckbI t_Aj
++ (2*t_AI*sin(θ)^2*cos(θ)^2 + 2*sin(θ)*cos(θ)^3 + sin(θ)*cos(θ)) U1_bjcI t_Ak
+
++ (2*sin(θ)^3*cos(θ)) U1_cjAk t_bI
++ (2*t_AI*sin(θ)^2*cos(θ)^2) U1_ckAj t_bI
++ (2*t_AI*sin(θ)^2*cos(θ)^2 - 4*sin(θ)^3*cos(θ) - 2*sin(θ)*cos(θ)^3 + sin(θ)*cos(θ)) U1_bjAk t_cI
+
+
++ 4*sin(θ)^2*cos(θ)^2 U1_bjAI u_AkcI
+- 2*sin(θ)^2*cos(θ)^2 U1_cjAI u_AkbI
+- 2*sin(θ)^2*cos(θ)^2 U1_bkAI u_AjcI
+- 2*sin(θ)^2*cos(θ)^2 U1_ckAI u_AIbj
+
+- 8*sin(θ)^2*cos(θ)^2 U1_bjAI t_Ak t_cI
++ 4*sin(θ)^2*cos(θ)^2 U1_bkAI t_Aj t_cI
++ 4*sin(θ)^2*cos(θ)^2 U1_cjAI t_Ak t_bI
+- 2*sin(θ)^2*cos(θ)^2 U1_ckAI t_Aj t_bI
+
+
+- 2*sin(θ)*cos(θ)^3 + sin(θ)*cos(θ) U2_Ajck t_bI
+- 2*sin(θ)*cos(θ)^3 + sin(θ)*cos(θ) U2_Akcj t_bI

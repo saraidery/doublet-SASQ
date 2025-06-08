@@ -1,0 +1,701 @@
+4 cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_bjck
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_bkcj
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) t_aibk t_bjcj
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) t_aicj t_bjbk
++ 2 cos(θ) cos(θ) sin(θ) sin(θ) t_aick t_bjbj
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_bjck
++ cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_bkcj
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) t_ajbj t_bick
++ cos(θ) cos(θ) sin(θ) sin(θ) t_ajbj t_bkci
++ cos(θ) cos(θ) sin(θ) sin(θ) t_ajbk t_bicj
++ cos(θ) cos(θ) sin(θ) sin(θ) t_ajbk t_bjci
++ cos(θ) cos(θ) sin(θ) sin(θ) t_ajci t_bjbk
++ cos(θ) cos(θ) sin(θ) sin(θ) t_ajcj t_bibk
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) t_ajck t_bibj
++ cos(θ) cos(θ) sin(θ) sin(θ) t_akbi t_bjcj
++ cos(θ) cos(θ) sin(θ) sin(θ) t_akbj t_bicj
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) t_akbj t_bjci
+- cos(θ) cos(θ) sin(θ) sin(θ) t_akci t_bjbj
++ cos(θ) cos(θ) sin(θ) sin(θ) t_akcj t_bibj
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiai t_bjck
++ cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiai t_bkcj
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiaj t_bick
+- cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiaj t_bkci
+- cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiak t_bicj
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiak t_bjci
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibi t_ajck
+- cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibi t_akcj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_aick
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_akci
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_bjck
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_bkcj
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibk t_aicj
+- cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibk t_ajci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibk t_bjcj
+- cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aici t_ajbk
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aici t_akbj
+- cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aicj t_akbi
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aicj t_bjbk
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aick t_ajbi
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aick t_bjbj
+- cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajak t_bici
+- cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_akci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_bjck
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_bkcj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbj t_bick
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbj t_bkci
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbk t_bicj
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbk t_bjci
+- cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajci t_akbi
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajci t_bjbk
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajcj t_bibk
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajck t_bibj
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_akbi t_bjcj
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_akbj t_bicj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_akbj t_bjci
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_akci t_bjbj
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_akcj t_bibj
+- δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiai t_bjbk
++ δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiaj t_bibk
++ 2 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiaj t_bjbk
++ δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiak t_bibj
+- 2 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiak t_bjbj
++ δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibi t_ajbk
++ δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibi t_akbj
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_aibk
++ 2 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_ajbk
++ δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_akbi
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_akbj
++ δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibk t_ajbi
++ 2 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibk t_ajbj
+- 2 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajaj t_bibk
+- δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajak t_bibi
++ 2 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajak t_bibj
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_ajbk
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_akbi
++ 2 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_akbj
++ 2 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbj t_akbi
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjck
++ cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bkcj
++ 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bick
+- cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bkci
+- cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bicj
++ 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bjci
++ 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajck
+- cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akcj
+- 4 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aick
++ 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akci
+- 8 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bjck
++ 4 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bkcj
++ 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aicj
+- cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajci
++ 4 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_bjcj
+- cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbk
++ 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_akbj
+- cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_akbi
++ 4 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_bjbk
++ 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aick t_ajbi
+- 4 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aick t_bjbj
+- cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bici
+- cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akci
++ 4 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bjck
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bkcj
++ 4 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bick
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bkci
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_bicj
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_bjci
+- cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_akbi
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_bjbk
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_bibk
++ 4 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajck t_bibj
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akbi t_bjcj
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akbj t_bicj
++ 4 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akbj t_bjci
++ 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akci t_bjbj
+- 2 cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akcj t_bibj
++ δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjcj
+- δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bicj
+- δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bjci
+- δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajcj
+- 2 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_bjcj
++ 2 δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aicj
+- δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajci
+- 2 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bicj
++ 4 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bjci
+- δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbj
++ 2 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_bjbj
+- δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ajbi
+- 2 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_bibj
++ δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bici
++ 2 δ_jk cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajci
++ 4 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bicj
+- 2 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bjci
+- 2 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bici
+- 2 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_bibj
++ 2 δ_ik cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_bibi
++ 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aibj t_bjck
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aibj t_bkcj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aibk t_bjcj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aicj t_bjbk
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aick t_bjbj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbi t_bjck
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbi t_bkcj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbj t_bick
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbj t_bkci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbk t_bicj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbk t_bjci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajci t_bjbk
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajcj t_bibk
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajck t_bibj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akbi t_bjcj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akbj t_bicj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akbj t_bjci
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akci t_bjbj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akcj t_bibj
+- cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbk t_cj
+- cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjcj t_bk
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bi t_bjck
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bi t_bkcj
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibk t_cj
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bicj t_bk
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bjbk t_ci
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bjci t_bk
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bi t_bjcj
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bibj t_cj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bjbj t_ci
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_aj t_bjck
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_aj t_bkcj
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbk t_cj
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajcj t_bk
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ak t_bjcj
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akbj t_cj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibk t_cj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aicj t_bk
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aj t_bick
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aj t_bkci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbk t_ci
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajci t_bk
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajck t_bi
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ak t_bicj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ak t_bjci
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbi t_cj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbj t_ci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akcj t_bi
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bj t_bjck
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bj t_bkcj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aj t_bicj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aj t_bjci
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbi t_cj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbj t_ci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajcj t_bi
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_bj t_bjcj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aici t_aj t_bjbk
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbj t_bk
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aici t_ak t_bjbj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_aj t_bibk
++ cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ajbi t_bk
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ajbk t_bi
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ak t_bibj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_akbj t_bi
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_bj t_bjbk
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aick t_aj t_bibj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aick t_ajbj t_bi
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aick t_bj t_bjbj
++ 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajbi t_bick
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajbi t_bkci
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajbk t_bici
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajci t_bibk
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajck t_bibi
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akbi t_bicj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akbi t_bjci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akbj t_bici
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akci t_bibj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akcj t_bibi
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bi t_bick
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bi t_bkci
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibk t_ci
+- cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bici t_bk
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bi t_bicj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bi t_bjci
+- cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibi t_cj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibj t_ci
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbk t_ci
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajci t_bk
++ 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajck t_bi
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ak t_bicj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ak t_bjci
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbi t_cj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbj t_ci
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akcj t_bi
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bj t_bjck
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bj t_bkcj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_ak t_bici
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_akbi t_ci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_akci t_bi
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bick t_bj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bj t_bkci
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_ajci t_bi
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_bicj t_bj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_bj t_bjci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajci t_ak t_bibj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajci t_akbj t_bi
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajci t_bj t_bjbk
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_ak t_bibi
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_akbi t_bi
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_bibk t_bj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajck t_bibj t_bj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_akbi t_bj t_bjcj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_akbj t_bicj t_bj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_akbj t_bj t_bjci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_akci t_bj t_bjbj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_akcj t_bibj t_bj
++ 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiai t_bjbk
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiaj t_bibk
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiaj t_bjbk
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiak t_bibj
++ 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aiak t_bjbj
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibi t_ajbk
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibi t_akbj
++ 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_aibk
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_ajbk
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_akbi
++ 8 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibj t_akbj
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibk t_ajbi
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_aibk t_ajbj
++ 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajaj t_bibk
++ 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajak t_bibi
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajak t_bibj
++ 8 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_ajbk
++ 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_akbi
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbi t_akbj
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) t_ajbj t_akbi
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bkcj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bick
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bkci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bicj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bjci
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajck
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akcj
++ 16 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aick
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akci
++ 16 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bjck
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bkcj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aicj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajci
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_bjcj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbk
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_akbj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_akbi
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_bjbk
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aick t_ajbi
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aick t_bjbj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bici
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akci
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bjck
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bkcj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bick
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bkci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_bicj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_bjci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_akbi
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_bjbk
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_bibk
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajck t_bibj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akbi t_bjcj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akbj t_bicj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akbj t_bjci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akci t_bjbj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akcj t_bibj
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbk
+- 4 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjcj
++ 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibk
++ 4 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bicj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bjci
++ 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bibj
++ 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbk
++ 4 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajcj
++ 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akbj
++ 4 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_bjcj
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibk
+- 8 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aicj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajci
++ 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbi
++ 4 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bicj
+- 8 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bjci
++ 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbi
++ 4 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbj
+- 4 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_bjbj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ajbi
++ 4 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_bibj
+- 4 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bici
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibi
+- 8 δ_jk cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajci
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbi
+- 8 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bicj
++ 4 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bjci
++ 4 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bici
++ 4 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_bibj
+- 4 δ_ik cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_bibi
++ 2 δ_jk δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbj
+- 4 δ_jk δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibj
+- 4 δ_jk δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbj
++ 4 δ_jk δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibj
+- 4 δ_jk δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbi
++ 2 δ_jk δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibi
++ 4 δ_jk δ_bc cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbi
+- 16 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aibj t_bjck
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aibj t_bkcj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aibk t_bjcj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aicj t_bjbk
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_aick t_bjbj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbi t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbi t_bkcj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbj t_bick
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbj t_bkci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbk t_bicj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbk t_bjci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajci t_bjbk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajcj t_bibk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajck t_bibj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akbi t_bjcj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akbj t_bicj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akbj t_bjci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akci t_bjbj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ai t_akcj t_bibj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bjck
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bkcj
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbk t_cj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjcj t_bk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bi t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bi t_bkcj
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibk t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bicj t_bk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bick t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bj t_bkci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bjbk t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bjci t_bk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bi t_bjcj
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bibj t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bicj t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bj t_bjci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bjbj t_ci
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_aj t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_aj t_bkcj
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbk t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajcj t_bk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajck t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ak t_bjcj
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akbj t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akcj t_bj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibk t_cj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aicj t_bk
+- 16 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aick t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aj t_bick
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aj t_bkci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbk t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajci t_bk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajck t_bi
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ak t_bicj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ak t_bjci
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbi t_cj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbj t_ci
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akci t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akcj t_bi
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aicj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aj t_bicj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aj t_bjci
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbi t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbj t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajci t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajcj t_bi
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aici t_aj t_bjbk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbj t_bk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbk t_bj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aici t_ak t_bjbj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aici t_akbj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_aj t_bibk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ajbi t_bk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ajbk t_bi
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ak t_bibj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_akbi t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aicj t_akbj t_bi
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aick t_aj t_bibj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aick t_ajbi t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aick t_ajbj t_bi
+- 16 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajbi t_bick
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajbi t_bkci
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajbk t_bici
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajci t_bibk
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajck t_bibi
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akbi t_bicj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akbi t_bjci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akbj t_bici
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akci t_bibj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aj t_akcj t_bibi
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bi t_bick
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bi t_bkci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibk t_ci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bici t_bk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bi t_bicj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bi t_bjci
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibi t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibj t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bici t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbk t_ci
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajci t_bk
+- 16 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajck t_bi
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ak t_bicj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ak t_bjci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbi t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbj t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akci t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akcj t_bi
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_ak t_bici
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_akbi t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_akci t_bi
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_ajci t_bi
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajci t_ak t_bibj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajci t_akbi t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajci t_akbj t_bi
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_ak t_bibi
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_akbi t_bi
++ 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bjbk
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbj t_bk
++ 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibj t_bk
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibk t_bj
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bj t_bjbk
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bibj t_bj
++ 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bj t_bjbj
++ 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbj t_bk
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbk t_bj
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akbj t_bj
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibj t_bk
++ 8 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibk t_bj
++ 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbi t_bk
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbk t_bj
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbi t_bj
++ 8 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbj t_bj
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbi t_bj
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbj t_bj
+- 2 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibi t_bk
++ 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibk t_bj
++ 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibi t_bj
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibj t_bj
+- 4 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbi t_bk
++ 8 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbk t_bj
++ 8 δ_bc cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbi t_bj
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbj t_bj
+- 4 δ_ac cos(θ) cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_akbi t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbj t_bjck
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbj t_bkcj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibj t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibj t_bkcj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbj t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbj t_bkcj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibj t_bjck
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibj t_bkcj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbi t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbi t_bkcj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibi t_bjck
++ 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibi t_bkcj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbi t_bjck
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbi t_bkcj
++ 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bjck
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bkcj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbk t_cj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibk t_cj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bick t_bj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bj t_bkci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bibj t_cj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bicj t_bj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bj t_bjci
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbk t_cj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajck t_bj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akbj t_cj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akcj t_bj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibk t_cj
++ 16 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aick t_bj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbi t_cj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akci t_bj
++ 16 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bj t_bjck
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bj t_bkcj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aicj t_bj
++ 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbi t_cj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajci t_bj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_bj t_bjcj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbk t_bj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_akbj t_bj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_akbi t_bj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_bj t_bjbk
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aick t_ajbi t_bj
++ 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aick t_bj t_bjbj
+- 2 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibi t_cj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bici t_bj
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbi t_cj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akci t_bj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bj t_bjck
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bj t_bkcj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bick t_bj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bj t_bkci
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_bicj t_bj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_bj t_bjci
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_akbi t_bj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_bj t_bjbk
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_bibk t_bj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajck t_bibj t_bj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akbi t_bj t_bjcj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akbj t_bicj t_bj
+- 8 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akbj t_bj t_bjci
+- 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akci t_bj t_bjbj
++ 4 cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_akcj t_bibj t_bj
+- 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bjcj
++ 2 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbj t_cj
+- 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibj t_cj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bicj t_bj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bj t_bjci
+- 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbj t_cj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajcj t_bj
++ 4 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_bj t_bjcj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibj t_cj
+- 8 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aicj t_bj
+- 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbi t_cj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajci t_bj
++ 4 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bicj t_bj
+- 8 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_bj t_bjci
++ 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbj t_bj
+- 4 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_bj t_bjbj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ajbi t_bj
++ 4 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_bibj t_bj
++ 2 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibi t_cj
+- 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bici t_bj
++ 4 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbi t_cj
+- 8 δ_jk cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajci t_bj
+- 8 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bicj t_bj
++ 4 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_bj t_bjci
++ 4 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_bici t_bj
++ 4 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_bibj t_bj
+- 4 δ_ik cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_bibi t_bj
+- 16 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_aibj t_bj t_bjck
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_aibj t_bj t_bkcj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_aibk t_bj t_bjcj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_aicj t_bj t_bjbk
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_aick t_bj t_bjbj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbi t_bj t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbi t_bj t_bkcj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbj t_bick t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbj t_bj t_bkci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbk t_bicj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajbk t_bj t_bjci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajci t_bj t_bjbk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajcj t_bibk t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_ajck t_bibj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_akbi t_bj t_bjcj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_akbj t_bicj t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_akbj t_bj t_bjci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_akci t_bj t_bjbj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ai t_akcj t_bibj t_bj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bj t_bjck
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bj t_bkcj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bjbk t_cj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bj t_bjcj t_bk
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiai t_bjbj t_bk t_cj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bi t_bj t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bi t_bj t_bkcj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibj t_bk t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bibk t_bj t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bicj t_bj t_bk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bick t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bj t_bj t_bkci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bj t_bjbk t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiaj t_bj t_bjci t_bk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bi t_bj t_bjcj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bibj t_bj t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bicj t_bj t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bj t_bj t_bjci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aiak t_bj t_bjbj t_ci
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_aj t_bj t_bjck
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_aj t_bj t_bkcj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbj t_bk t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajbk t_bj t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajcj t_bj t_bk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ajck t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_ak t_bj t_bjcj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akbj t_bj t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibi t_akcj t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibj t_bk t_cj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aibk t_bj t_cj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aicj t_bj t_bk
+- 16 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aick t_bj t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aj t_bick t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_aj t_bj t_bkci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbi t_bk t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajbk t_bj t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajci t_bj t_bk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ajck t_bi t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ak t_bicj t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_ak t_bj t_bjci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbi t_bj t_cj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akbj t_bj t_ci
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akci t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibj t_akcj t_bi t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aicj t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aj t_bicj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_aj t_bj t_bjci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbi t_bj t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajbj t_bj t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajci t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aibk t_ajcj t_bi t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_aj t_bj t_bjbk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbj t_bj t_bk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_ajbk t_bj t_bj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_ak t_bj t_bjbj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aici t_akbj t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_aj t_bibk t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ajbi t_bj t_bk
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ajbk t_bi t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_ak t_bibj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_akbi t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aicj t_akbj t_bi t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aick t_aj t_bibj t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aick t_ajbi t_bj t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aick t_ajbj t_bi t_bj
+- 16 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajbi t_bick t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajbi t_bj t_bkci
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajbk t_bici t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajci t_bibk t_bj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_ajck t_bibi t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_akbi t_bicj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_akbi t_bj t_bjci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_akbj t_bici t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_akci t_bibj t_bj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_aj t_akcj t_bibi t_bj
+- 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bi t_bick t_bj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bi t_bj t_bkci
+- 2 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibi t_bk t_cj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bibk t_bj t_ci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajaj t_bici t_bj t_bk
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bi t_bicj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bi t_bj t_bjci
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibi t_bj t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bibj t_bj t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajak t_bici t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbi t_bk t_cj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajbk t_bj t_ci
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajci t_bj t_bk
+- 16 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ajck t_bi t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ak t_bicj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_ak t_bj t_bjci
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbi t_bj t_cj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akbj t_bj t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akci t_bj t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbi t_akcj t_bi t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_ak t_bici t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_akbi t_bj t_ci
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbj t_akci t_bi t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajbk t_ajci t_bi t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_ak t_bibj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_akbi t_bj t_bj
+- 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajci t_akbj t_bi t_bj
++ 4 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_ak t_bibi t_bj
++ 8 cos(θ) cos(θ) cos(θ) cos(θ) sin(θ) sin(θ) sin(θ) sin(θ) t_ajcj t_akbi t_bi t_bj

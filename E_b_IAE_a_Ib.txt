@@ -1,0 +1,13 @@
++ 4 sin(θ) cos(θ)^3 t_Ajck E^β_IA E^α_Ib 
+- 4 sin(θ)^2 cos(θ)^2 δ_Ik δ_Ac t_Aj E^β_IA E^α_Ib 
+- 4 sin(θ)^2 cos(θ)^2 δ_Ij δ_Ac t_Ak E^β_IA E^α_Ib 
++ 2 t_AI sin(θ)^2 cos(θ)^2 u_Ajck E^β_IA E^α_Ib 
+- 2 sin(θ)^3 cos(θ) δ_Ik u_AjcI E^β_IA E^α_Ib 
++ 4 sin(θ)^3 cos(θ) δ_Ij u_AkcI E^β_IA E^α_Ib 
+- 2 sin(θ)^3 cos(θ) v_Ajck E^β_IA E^α_Ib 
++ 4 sin(θ) cos(θ)^3 δ_Ac t_Aj t_Ak E^β_IA E^α_Ib 
+- 4 sin(θ)^3 cos(θ) δ_Ik t_Aj t_cI E^β_IA E^α_Ib 
+- 4 sin(θ)^3 cos(θ) δ_Ij t_Ak t_cI E^β_IA E^α_Ib 
+- 4 sin(θ)^2 cos(θ)^2 t_Aj u_AkcI E^β_IA E^α_Ib 
++ 2 sin(θ)^2 cos(θ)^2 t_Ak u_AjcI E^β_IA E^α_Ib 
++ 4 sin(θ)^2 cos(θ)^2 t_Aj t_Ak t_cI E^β_IA E^α_Ib 
